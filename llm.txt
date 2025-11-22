@@ -134,7 +134,7 @@ favicon assets: Branding.
 Ensure clear site footer statement if open-sourcing. Avoid embedding third-party wordlists without proper licensing if adding passphrase mode.
 
 ## 20. Contact
-Support: support@generatepassword.online
+Support: support@calculate-bmi.online
 
 ## 21. Disclaimer
 Until crypto randomness is implemented, do not market output as “cryptographically secure.” Update marketing text post-change.
