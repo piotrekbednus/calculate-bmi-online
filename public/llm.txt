@@ -1,14 +1,19 @@
-# GeneratePassword.online
+# Calculate BMI Online
 
-This website is a free online password generator. It allows users to create strong, secure passwords with customizable options such as length, uppercase/lowercase letters, numbers, and symbols.
+This website provides a free, fast, and secure Body Mass Index (BMI) calculator.
 
 ## Features
-- Customizable password length (4-64 characters)
-- Option to include/exclude uppercase, lowercase, numbers, and symbols
-- Option to exclude similar or ambiguous characters
-- Password strength indicator
-- Client-side generation (passwords are never sent to a server)
-- Multi-language support
+- Calculate BMI using Metric units (kg, cm)
+- Calculate BMI using Imperial units (lbs, ft/in)
+- Instant results with BMI score and category (Underweight, Normal, Overweight, Obesity)
+- No registration required
+- Privacy-focused (all calculations are client-side)
+
+## How to use
+1. Select your preferred unit system (Metric or Imperial).
+2. Enter your weight and height.
+3. Click "Calculate BMI".
+4. View your result and category.
 
 ## API
-There is no public API for this tool. All logic is performed client-side.
+This is a static site and does not offer a public API. All logic is contained within the HTML/JS.

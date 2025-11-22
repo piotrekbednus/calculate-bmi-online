@@ -7,362 +7,283 @@ interface Props {
 const { langData, lang } = Astro.props;
 ---
 
-<!-- Password Generator Tool -->
-<div class="password-generator">
-  <div class="password-output">
-    <input type="text" id="passwordDisplay" readonly value="">
-    <button class="copy-button" id="copyButton">{langData.passwordGenerator.copyButton}</button>
+<!-- BMI Calculator Tool -->
+<div class="bmi-calculator">
+  <div class="unit-toggle">
+    <label class="radio-label">
+      <input type="radio" name="unit" value="metric" checked id="metricRadio">
+      {langData.bmiCalculator.metric}
+    </label>
+    <label class="radio-label">
+      <input type="radio" name="unit" value="imperial" id="imperialRadio">
+      {langData.bmiCalculator.imperial}
+    </label>
   </div>
-  
-  <div class="strength-meter">
-    <div class="strength-fill" id="strengthMeter"></div>
-  </div>
-  <div class="strength-text" id="strengthText">{langData.passwordGenerator.strengthText}</div>
-  
-  <div class="option-container">
-    <label for="lengthRange">{langData.passwordGenerator.passwordLength}</label>
-    <div class="slider-container">
-      <input type="range" min="4" max="64" value="12" class="range-slider" id="lengthRange">
-      <span class="range-value" id="lengthValue">12</span>
+
+  <div class="input-group" id="metricInputs">
+    <div class="input-field">
+      <label for="weightMetric">{langData.bmiCalculator.weightLabel} (kg)</label>
+      <input type="number" id="weightMetric" placeholder="70" min="1" step="0.1">
+    </div>
+    <div class="input-field">
+      <label for="heightMetric">{langData.bmiCalculator.heightLabel} (cm)</label>
+      <input type="number" id="heightMetric" placeholder="170" min="1" step="1">
     </div>
   </div>
-  
-  <div class="checkbox-container">
-    <input type="checkbox" id="uppercaseCheck" checked>
-    <label for="uppercaseCheck">{langData.passwordGenerator.uppercaseOption}</label>
+
+  <div class="input-group hidden" id="imperialInputs">
+    <div class="input-field">
+      <label for="weightImperial">{langData.bmiCalculator.weightLabel} (lbs)</label>
+      <input type="number" id="weightImperial" placeholder="150" min="1" step="0.1">
+    </div>
+    <div class="input-field double-input">
+      <label>{langData.bmiCalculator.heightLabel}</label>
+      <div class="feet-inches">
+        <input type="number" id="heightFeet" placeholder="5" min="1" step="1">
+        <span>ft</span>
+        <input type="number" id="heightInches" placeholder="7" min="0" max="11" step="1">
+        <span>in</span>
+      </div>
+    </div>
   </div>
-  
-  <div class="checkbox-container">
-    <input type="checkbox" id="lowercaseCheck" checked>
-    <label for="lowercaseCheck">{langData.passwordGenerator.lowercaseOption}</label>
-  </div>
-  
-  <div class="checkbox-container">
-    <input type="checkbox" id="numbersCheck" checked>
-    <label for="numbersCheck">{langData.passwordGenerator.numbersOption}</label>
-  </div>
-  
-  <div class="checkbox-container">
-    <input type="checkbox" id="symbolsCheck" checked>
-    <label for="symbolsCheck">{langData.passwordGenerator.symbolsOption}</label>
-  </div>
-  
-  <div class="checkbox-container">
-    <input type="checkbox" id="excludeSimilarCheck">
-    <label for="excludeSimilarCheck">{langData.passwordGenerator.excludeSimilarOption}</label>
-  </div>
-  
-  <div class="checkbox-container">
-    <input type="checkbox" id="excludeAmbiguousCheck">
-    <label for="excludeAmbiguousCheck">{langData.passwordGenerator.excludeAmbiguousOption}</label>
-  </div>
-  
+
   <div class="action-buttons">
-    <button id="generateButton">{langData.passwordGenerator.generateButton}</button>
+    <button id="calculateButton">{langData.bmiCalculator.calculateButton}</button>
+  </div>
+
+  <div class="result-container hidden" id="resultContainer">
+    <div class="bmi-value" id="bmiValue">--</div>
+    <div class="bmi-category" id="bmiCategory">--</div>
+    <div class="bmi-meter">
+      <div class="bmi-fill" id="bmiFill"></div>
+    </div>
   </div>
 </div>
 
 <script define:vars={{ langData, lang }}>
-  // Inject translations for the script to use
   window.translations = { [lang]: langData };
-  
-  // Wait for DOM to be fully loaded before initializing
+
   document.addEventListener("DOMContentLoaded", function() {
-    // Get references to all required elements
-    const passwordDisplay = document.getElementById("passwordDisplay");
-    const copyButton = document.getElementById("copyButton");
-    const lengthRange = document.getElementById("lengthRange");
-    const lengthValue = document.getElementById("lengthValue");
-    const uppercaseCheck = document.getElementById("uppercaseCheck");
-    const lowercaseCheck = document.getElementById("lowercaseCheck");
-    const numbersCheck = document.getElementById("numbersCheck");
-    const symbolsCheck = document.getElementById("symbolsCheck");
-    const excludeSimilarCheck = document.getElementById("excludeSimilarCheck");
-    const excludeAmbiguousCheck = document.getElementById("excludeAmbiguousCheck");
-    const generateButton = document.getElementById("generateButton");
-    const strengthMeter = document.getElementById("strengthMeter");
-    const strengthText = document.getElementById("strengthText");
-    
-    // Character sets
-    const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
-    const numberChars = "0123456789";
-    const symbolChars = "!@#$%^&*()_+-=[]{}|;:,.<>?";
-    const similarChars = "il1Lo0O";
-    const ambiguousChars = "{[]()\\/`~,;:.<>)";
-    
-    // Update length value display when slider changes
-    if (lengthRange) {
-        lengthRange.addEventListener("input", function() {
-        lengthValue.textContent = lengthRange.value;
-        });
-    }
-    
-    // Function to generate a random password
-    function generatePassword() {
-      let chars = "";
-      let password = "";
-      
-      // Verify at least one character type is selected
-      if (!uppercaseCheck.checked && !lowercaseCheck.checked && 
-          !numbersCheck.checked && !symbolsCheck.checked) {
-        // Get translated message if available
-        let alertMessage = "Please select at least one character type.";
-        if (window.translations && 
-            window.translations[lang] &&
-            window.translations[lang].alertMessages &&
-            window.translations[lang].alertMessages.emptyText) {
-          alertMessage = window.translations[lang].alertMessages.emptyText;
-        }
-        alert(alertMessage);
-        return;
-      }
-      
-      // Build character set based on selected options
-      if (uppercaseCheck.checked) chars += uppercaseChars;
-      if (lowercaseCheck.checked) chars += lowercaseChars;
-      if (numbersCheck.checked) chars += numberChars;
-      if (symbolsCheck.checked) chars += symbolChars;
-      
-      // Remove similar characters if option is selected
-      if (excludeSimilarCheck.checked) {
-        for (let i = 0; i < similarChars.length; i++) {
-          chars = chars.replace(new RegExp(similarChars[i], 'g'), '');
-        }
-      }
-      
-      // Remove ambiguous characters if option is selected
-      if (excludeAmbiguousCheck.checked) {
-        for (let i = 0; i < ambiguousChars.length; i++) {
-          chars = chars.replace(new RegExp('\\' + ambiguousChars[i], 'g'), '');
-        }
-      }
-      
-      // Generate the password
-      const length = parseInt(lengthRange.value);
-      
-      for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * chars.length);
-        password += chars.charAt(randomIndex);
-      }
-      
-      // Update password display
-      passwordDisplay.value = password;
-      
-      // Update strength meter
-      updatePasswordStrength(password);
-    }
-    
-    // Function to evaluate password strength
-    function updatePasswordStrength(password) {
-      const length = password.length;
-      
-      // Calculate base score based on length (0-100)
-      let score = Math.min(100, length * 4);
-      
-      // Check character variety
-      const hasUpper = /[A-Z]/.test(password);
-      const hasLower = /[a-z]/.test(password);
-      const hasNumber = /[0-9]/.test(password);
-      const hasSymbol = /[^A-Za-z0-9]/.test(password);
-      
-      // Adjust score based on character variety
-      const variety = (hasUpper ? 1 : 0) + 
-                      (hasLower ? 1 : 0) + 
-                      (hasNumber ? 1 : 0) + 
-                      (hasSymbol ? 1 : 0);
-      
-      score = Math.min(100, score * (variety / 4));
-      
-      // Set appropriate strength level
-      let strengthClass = "";
-      let strengthDescription = "";
-      
-      // Get translations if available
-      const dict = window.translations ? window.translations[lang] : null;
-      
-      if (score < 20) {
-        strengthClass = "very-weak";
-        strengthDescription = dict && dict.passwordGenerator && dict.passwordGenerator.veryWeak ? 
-                             dict.passwordGenerator.veryWeak : "Very Weak";
-      } else if (score < 40) {
-        strengthClass = "weak";
-        strengthDescription = dict && dict.passwordGenerator && dict.passwordGenerator.weak ? 
-                             dict.passwordGenerator.weak : "Weak";
-      } else if (score < 60) {
-        strengthClass = "medium";
-        strengthDescription = dict && dict.passwordGenerator && dict.passwordGenerator.medium ? 
-                             dict.passwordGenerator.medium : "Medium";
-      } else if (score < 80) {
-        strengthClass = "strong";
-        strengthDescription = dict && dict.passwordGenerator && dict.passwordGenerator.strong ? 
-                             dict.passwordGenerator.strong : "Strong";
+    const metricRadio = document.getElementById("metricRadio");
+    const imperialRadio = document.getElementById("imperialRadio");
+    const metricInputs = document.getElementById("metricInputs");
+    const imperialInputs = document.getElementById("imperialInputs");
+    const calculateButton = document.getElementById("calculateButton");
+    const resultContainer = document.getElementById("resultContainer");
+    const bmiValue = document.getElementById("bmiValue");
+    const bmiCategory = document.getElementById("bmiCategory");
+    const bmiFill = document.getElementById("bmiFill");
+
+    // Inputs
+    const weightMetric = document.getElementById("weightMetric");
+    const heightMetric = document.getElementById("heightMetric");
+    const weightImperial = document.getElementById("weightImperial");
+    const heightFeet = document.getElementById("heightFeet");
+    const heightInches = document.getElementById("heightInches");
+
+    // Toggle units
+    function toggleUnits() {
+      if (metricRadio.checked) {
+        metricInputs.classList.remove("hidden");
+        imperialInputs.classList.add("hidden");
       } else {
-        strengthClass = "very-strong";
-        strengthDescription = dict && dict.passwordGenerator && dict.passwordGenerator.veryStrong ? 
-                             dict.passwordGenerator.veryStrong : "Very Strong";
+        metricInputs.classList.add("hidden");
+        imperialInputs.classList.remove("hidden");
       }
-      
-      // Update the strength meter UI
-      strengthMeter.className = "strength-fill";
-      strengthMeter.classList.add(strengthClass);
-      
-      // Get translated strength text prefix
-      const strengthPrefix = dict && dict.passwordGenerator && dict.passwordGenerator.strengthText ? 
-                            dict.passwordGenerator.strengthText : "Password Strength:";
-      
-      strengthText.textContent = strengthPrefix + " " + strengthDescription;
+      resultContainer.classList.add("hidden");
     }
-    
-    // Copy password to clipboard
-    if (copyButton) {
-        copyButton.addEventListener("click", function() {
-        if (passwordDisplay.value) {
-            passwordDisplay.select();
-            document.execCommand("copy");
-            
-            // Get translated copied message
-            const dict = window.translations ? window.translations[lang] : null;
-                        
-            const copiedText = dict && dict.passwordGenerator && dict.passwordGenerator.copied ? 
-                            dict.passwordGenerator.copied : "Copied!";
-                            
-            const originalText = copyButton.textContent;
-            copyButton.textContent = copiedText;
-            setTimeout(() => {
-            copyButton.textContent = originalText;
-            }, 2000);
+
+    metricRadio.addEventListener("change", toggleUnits);
+    imperialRadio.addEventListener("change", toggleUnits);
+
+    function calculateBMI() {
+      let weight, height;
+      let bmi = 0;
+
+      if (metricRadio.checked) {
+        weight = parseFloat(weightMetric.value);
+        height = parseFloat(heightMetric.value);
+
+        if (weight > 0 && height > 0) {
+          // BMI = kg / (m * m)
+          bmi = weight / ((height / 100) * (height / 100));
         }
-        });
+      } else {
+        weight = parseFloat(weightImperial.value);
+        const feet = parseFloat(heightFeet.value) || 0;
+        const inches = parseFloat(heightInches.value) || 0;
+        const totalInches = (feet * 12) + inches;
+
+        if (weight > 0 && totalInches > 0) {
+          // BMI = 703 * lbs / (in * in)
+          bmi = 703 * weight / (totalInches * totalInches);
+        }
+      }
+
+      if (bmi > 0) {
+        displayResult(bmi);
+      } else {
+        alert("Please enter valid values.");
+      }
     }
-    
-    // Generate password when button is clicked
-    if (generateButton) {
-        generateButton.addEventListener("click", generatePassword);
+
+    function displayResult(bmi) {
+      const roundedBMI = bmi.toFixed(1);
+      bmiValue.textContent = roundedBMI;
+      resultContainer.classList.remove("hidden");
+
+      let category = "";
+      let color = "";
+      let percentage = 0;
+
+      const dict = window.translations[lang].bmiCalculator;
+
+      if (bmi < 18.5) {
+        category = dict.underweight;
+        color = "#3498db"; // Blue
+        percentage = 20;
+      } else if (bmi < 25) {
+        category = dict.normal;
+        color = "#2ecc71"; // Green
+        percentage = 50;
+      } else if (bmi < 30) {
+        category = dict.overweight;
+        color = "#f1c40f"; // Yellow
+        percentage = 80;
+      } else {
+        category = dict.obesity;
+        color = "#e74c3c"; // Red
+        percentage = 100;
+      }
+
+      bmiCategory.textContent = category;
+      bmiCategory.style.color = color;
+      
+      bmiFill.style.width = percentage + "%";
+      bmiFill.style.backgroundColor = color;
     }
-    
-    // Generate a password when the page loads
-    generatePassword();
+
+    calculateButton.addEventListener("click", calculateBMI);
   });
 </script>
 
 <style>
-  /* Tool specific styles */
-  .password-generator {
+  .bmi-calculator {
     background-color: #fff;
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .password-output {
+
+  .unit-toggle {
     display: flex;
-    margin-bottom: 1.5rem;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2rem;
   }
-  
-  #passwordDisplay {
-    flex-grow: 1;
-    padding: 15px;
-    font-size: 1.2rem;
+
+  .radio-label {
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .input-field label {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .input-field input {
+    padding: 12px;
     border: 2px solid #e0e0e0;
     border-radius: 5px;
-    font-family: monospace;
-    letter-spacing: 1px;
+    font-size: 1rem;
   }
-  
-  .copy-button {
+
+  .double-input .feet-inches {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .double-input input {
+    width: 100%;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .action-buttons {
+    text-align: center;
+  }
+
+  #calculateButton {
     background-color: #f0a500;
     color: white;
     border: none;
-    padding: 0 20px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
     border-radius: 5px;
-    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-weight: bold;
+    width: 100%;
   }
-  
-  .copy-button:hover {
+
+  #calculateButton:hover {
     background-color: #d99500;
   }
-  
-  .strength-meter {
-    height: 10px;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
-    overflow: hidden;
+
+  .result-container {
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
   }
-  
-  .strength-fill {
+
+  .bmi-value {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .bmi-category {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .bmi-meter {
+    height: 15px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+  .bmi-fill {
     height: 100%;
     width: 0%;
     transition: width 0.5s, background-color 0.5s;
-  }
-  
-  .very-weak { width: 20%; background-color: #ff4d4d; }
-  .weak { width: 40%; background-color: #ff9933; }
-  .medium { width: 60%; background-color: #ffff66; }
-  .strong { width: 80%; background-color: #99cc33; }
-  .very-strong { width: 100%; background-color: #33cc33; }
-  
-  .strength-text {
-    text-align: right;
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-    color: #666;
-  }
-  
-  .option-container, .checkbox-container {
-    margin-bottom: 1rem;
-  }
-  
-  .slider-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 0.5rem;
-  }
-  
-  .range-slider {
-    flex-grow: 1;
-  }
-  
-  .range-value {
-    font-weight: bold;
-    min-width: 30px;
-  }
-  
-  .checkbox-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-  }
-  
-  .action-buttons {
-    margin-top: 2rem;
-    text-align: center;
-  }
-  
-  #generateButton {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%;
-  }
-  
-  #generateButton:hover {
-    background-color: #000;
   }
 </style>
