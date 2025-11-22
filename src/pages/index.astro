@@ -1,0 +1,17 @@
+---
+import translations from '../data/translations.json';
+const supportedLanguages = Object.keys(translations);
+---
+
+<script define:vars={{ supportedLanguages }}>
+  const lang = navigator.language.split('-')[0];
+  const preferred = localStorage.getItem('preferredLanguage');
+  
+  if (preferred && supportedLanguages.includes(preferred)) {
+    window.location.href = `/${preferred}`;
+  } else if (supportedLanguages.includes(lang)) {
+    window.location.href = `/${lang}`;
+  } else {
+    window.location.href = '/en';
+  }
+</script>

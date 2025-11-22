@@ -1,0 +1,368 @@
+---
+interface Props {
+  langData: any;
+  lang: string;
+}
+
+const { langData, lang } = Astro.props;
+---
+
+<!-- Password Generator Tool -->
+<div class="password-generator">
+  <div class="password-output">
+    <input type="text" id="passwordDisplay" readonly value="">
+    <button class="copy-button" id="copyButton">{langData.passwordGenerator.copyButton}</button>
+  </div>
+  
+  <div class="strength-meter">
+    <div class="strength-fill" id="strengthMeter"></div>
+  </div>
+  <div class="strength-text" id="strengthText">{langData.passwordGenerator.strengthText}</div>
+  
+  <div class="option-container">
+    <label for="lengthRange">{langData.passwordGenerator.passwordLength}</label>
+    <div class="slider-container">
+      <input type="range" min="4" max="64" value="12" class="range-slider" id="lengthRange">
+      <span class="range-value" id="lengthValue">12</span>
+    </div>
+  </div>
+  
+  <div class="checkbox-container">
+    <input type="checkbox" id="uppercaseCheck" checked>
+    <label for="uppercaseCheck">{langData.passwordGenerator.uppercaseOption}</label>
+  </div>
+  
+  <div class="checkbox-container">
+    <input type="checkbox" id="lowercaseCheck" checked>
+    <label for="lowercaseCheck">{langData.passwordGenerator.lowercaseOption}</label>
+  </div>
+  
+  <div class="checkbox-container">
+    <input type="checkbox" id="numbersCheck" checked>
+    <label for="numbersCheck">{langData.passwordGenerator.numbersOption}</label>
+  </div>
+  
+  <div class="checkbox-container">
+    <input type="checkbox" id="symbolsCheck" checked>
+    <label for="symbolsCheck">{langData.passwordGenerator.symbolsOption}</label>
+  </div>
+  
+  <div class="checkbox-container">
+    <input type="checkbox" id="excludeSimilarCheck">
+    <label for="excludeSimilarCheck">{langData.passwordGenerator.excludeSimilarOption}</label>
+  </div>
+  
+  <div class="checkbox-container">
+    <input type="checkbox" id="excludeAmbiguousCheck">
+    <label for="excludeAmbiguousCheck">{langData.passwordGenerator.excludeAmbiguousOption}</label>
+  </div>
+  
+  <div class="action-buttons">
+    <button id="generateButton">{langData.passwordGenerator.generateButton}</button>
+  </div>
+</div>
+
+<script define:vars={{ langData, lang }}>
+  // Inject translations for the script to use
+  window.translations = { [lang]: langData };
+  
+  // Wait for DOM to be fully loaded before initializing
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get references to all required elements
+    const passwordDisplay = document.getElementById("passwordDisplay");
+    const copyButton = document.getElementById("copyButton");
+    const lengthRange = document.getElementById("lengthRange");
+    const lengthValue = document.getElementById("lengthValue");
+    const uppercaseCheck = document.getElementById("uppercaseCheck");
+    const lowercaseCheck = document.getElementById("lowercaseCheck");
+    const numbersCheck = document.getElementById("numbersCheck");
+    const symbolsCheck = document.getElementById("symbolsCheck");
+    const excludeSimilarCheck = document.getElementById("excludeSimilarCheck");
+    const excludeAmbiguousCheck = document.getElementById("excludeAmbiguousCheck");
+    const generateButton = document.getElementById("generateButton");
+    const strengthMeter = document.getElementById("strengthMeter");
+    const strengthText = document.getElementById("strengthText");
+    
+    // Character sets
+    const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+    const numberChars = "0123456789";
+    const symbolChars = "!@#$%^&*()_+-=[]{}|;:,.<>?";
+    const similarChars = "il1Lo0O";
+    const ambiguousChars = "{[]()\\/`~,;:.<>)";
+    
+    // Update length value display when slider changes
+    if (lengthRange) {
+        lengthRange.addEventListener("input", function() {
+        lengthValue.textContent = lengthRange.value;
+        });
+    }
+    
+    // Function to generate a random password
+    function generatePassword() {
+      let chars = "";
+      let password = "";
+      
+      // Verify at least one character type is selected
+      if (!uppercaseCheck.checked && !lowercaseCheck.checked && 
+          !numbersCheck.checked && !symbolsCheck.checked) {
+        // Get translated message if available
+        let alertMessage = "Please select at least one character type.";
+        if (window.translations && 
+            window.translations[lang] &&
+            window.translations[lang].alertMessages &&
+            window.translations[lang].alertMessages.emptyText) {
+          alertMessage = window.translations[lang].alertMessages.emptyText;
+        }
+        alert(alertMessage);
+        return;
+      }
+      
+      // Build character set based on selected options
+      if (uppercaseCheck.checked) chars += uppercaseChars;
+      if (lowercaseCheck.checked) chars += lowercaseChars;
+      if (numbersCheck.checked) chars += numberChars;
+      if (symbolsCheck.checked) chars += symbolChars;
+      
+      // Remove similar characters if option is selected
+      if (excludeSimilarCheck.checked) {
+        for (let i = 0; i < similarChars.length; i++) {
+          chars = chars.replace(new RegExp(similarChars[i], 'g'), '');
+        }
+      }
+      
+      // Remove ambiguous characters if option is selected
+      if (excludeAmbiguousCheck.checked) {
+        for (let i = 0; i < ambiguousChars.length; i++) {
+          chars = chars.replace(new RegExp('\\' + ambiguousChars[i], 'g'), '');
+        }
+      }
+      
+      // Generate the password
+      const length = parseInt(lengthRange.value);
+      
+      for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * chars.length);
+        password += chars.charAt(randomIndex);
+      }
+      
+      // Update password display
+      passwordDisplay.value = password;
+      
+      // Update strength meter
+      updatePasswordStrength(password);
+    }
+    
+    // Function to evaluate password strength
+    function updatePasswordStrength(password) {
+      const length = password.length;
+      
+      // Calculate base score based on length (0-100)
+      let score = Math.min(100, length * 4);
+      
+      // Check character variety
+      const hasUpper = /[A-Z]/.test(password);
+      const hasLower = /[a-z]/.test(password);
+      const hasNumber = /[0-9]/.test(password);
+      const hasSymbol = /[^A-Za-z0-9]/.test(password);
+      
+      // Adjust score based on character variety
+      const variety = (hasUpper ? 1 : 0) + 
+                      (hasLower ? 1 : 0) + 
+                      (hasNumber ? 1 : 0) + 
+                      (hasSymbol ? 1 : 0);
+      
+      score = Math.min(100, score * (variety / 4));
+      
+      // Set appropriate strength level
+      let strengthClass = "";
+      let strengthDescription = "";
+      
+      // Get translations if available
+      const dict = window.translations ? window.translations[lang] : null;
+      
+      if (score < 20) {
+        strengthClass = "very-weak";
+        strengthDescription = dict && dict.passwordGenerator && dict.passwordGenerator.veryWeak ? 
+                             dict.passwordGenerator.veryWeak : "Very Weak";
+      } else if (score < 40) {
+        strengthClass = "weak";
+        strengthDescription = dict && dict.passwordGenerator && dict.passwordGenerator.weak ? 
+                             dict.passwordGenerator.weak : "Weak";
+      } else if (score < 60) {
+        strengthClass = "medium";
+        strengthDescription = dict && dict.passwordGenerator && dict.passwordGenerator.medium ? 
+                             dict.passwordGenerator.medium : "Medium";
+      } else if (score < 80) {
+        strengthClass = "strong";
+        strengthDescription = dict && dict.passwordGenerator && dict.passwordGenerator.strong ? 
+                             dict.passwordGenerator.strong : "Strong";
+      } else {
+        strengthClass = "very-strong";
+        strengthDescription = dict && dict.passwordGenerator && dict.passwordGenerator.veryStrong ? 
+                             dict.passwordGenerator.veryStrong : "Very Strong";
+      }
+      
+      // Update the strength meter UI
+      strengthMeter.className = "strength-fill";
+      strengthMeter.classList.add(strengthClass);
+      
+      // Get translated strength text prefix
+      const strengthPrefix = dict && dict.passwordGenerator && dict.passwordGenerator.strengthText ? 
+                            dict.passwordGenerator.strengthText : "Password Strength:";
+      
+      strengthText.textContent = strengthPrefix + " " + strengthDescription;
+    }
+    
+    // Copy password to clipboard
+    if (copyButton) {
+        copyButton.addEventListener("click", function() {
+        if (passwordDisplay.value) {
+            passwordDisplay.select();
+            document.execCommand("copy");
+            
+            // Get translated copied message
+            const dict = window.translations ? window.translations[lang] : null;
+                        
+            const copiedText = dict && dict.passwordGenerator && dict.passwordGenerator.copied ? 
+                            dict.passwordGenerator.copied : "Copied!";
+                            
+            const originalText = copyButton.textContent;
+            copyButton.textContent = copiedText;
+            setTimeout(() => {
+            copyButton.textContent = originalText;
+            }, 2000);
+        }
+        });
+    }
+    
+    // Generate password when button is clicked
+    if (generateButton) {
+        generateButton.addEventListener("click", generatePassword);
+    }
+    
+    // Generate a password when the page loads
+    generatePassword();
+  });
+</script>
+
+<style>
+  /* Tool specific styles */
+  .password-generator {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .password-output {
+    display: flex;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+  }
+  
+  #passwordDisplay {
+    flex-grow: 1;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-family: monospace;
+    letter-spacing: 1px;
+  }
+  
+  .copy-button {
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .copy-button:hover {
+    background-color: #d99500;
+  }
+  
+  .strength-meter {
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .strength-fill {
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s, background-color 0.5s;
+  }
+  
+  .very-weak { width: 20%; background-color: #ff4d4d; }
+  .weak { width: 40%; background-color: #ff9933; }
+  .medium { width: 60%; background-color: #ffff66; }
+  .strong { width: 80%; background-color: #99cc33; }
+  .very-strong { width: 100%; background-color: #33cc33; }
+  
+  .strength-text {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  .option-container, .checkbox-container {
+    margin-bottom: 1rem;
+  }
+  
+  .slider-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 0.5rem;
+  }
+  
+  .range-slider {
+    flex-grow: 1;
+  }
+  
+  .range-value {
+    font-weight: bold;
+    min-width: 30px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .action-buttons {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  #generateButton {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  #generateButton:hover {
+    background-color: #000;
+  }
+</style>

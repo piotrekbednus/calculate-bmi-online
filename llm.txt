@@ -1,0 +1,143 @@
+# llm.txt - Password Generator Project Documentation
+
+## 1. Overview
+A free, client-side password generator web page providing customizable, strong passwords with multilingual support, SEO-friendly content, and a simple strength indicator.
+
+## 2. Goals
+- Generate secure, unique passwords locally (no server storage).
+- Support multiple languages via dynamic translation loading.
+- Provide clear UX for strength, options, and copying.
+- Maintain SEO performance with structured, localized content.
+
+## 3. Tech Stack
+- HTML (single-page structure)
+- CSS (inline styles, dark theme, responsive layout)
+- JavaScript (vanilla + translation loader)
+- Optional external: Google Fonts, AdSense, translations.json
+
+## 4. Key Components
+- Language Switcher: Anchor list; active language styled dynamically.
+- Password Generator Panel: Inputs for length, character type toggles, advanced exclusion options.
+- Strength Meter: Visual bar + text classification.
+- SEO Content Sections: Hero, Features, How It Works, FAQ, Use Cases, Conclusion.
+- Footer: Contact + cross-links to other tools.
+
+## 5. Password Generation Logic
+Current:
+- Builds a character pool from selected sets.
+- Removes similar/ambiguous characters if toggled.
+- Uses Math.random for index selection (NOT cryptographically secure).
+Recommendation:
+Replace Math.random with window.crypto.getRandomValues for entropy:
+Example approach (concept):
+1. Create Uint32Array of required length.
+2. Fill via crypto.getRandomValues.
+3. Map each value modulo pool length to a character.
+Ensure at least one character from each selected category when variety matters (post-generation validation or pre-seeding).
+
+## 6. Character Sets
+- Uppercase: A–Z
+- Lowercase: a–z
+- Numbers: 0–9
+- Symbols: !@#$%^&*()_+-=[]{}|;:,.<>?
+- Similar (excluded optionally): il1Lo0O
+- Ambiguous (excluded optionally): {[]()\/`~,;:.<>)
+
+## 7. Strength Evaluation
+Current heuristic:
+- Base score = min(100, length * 4)
+- Multiplied by (variety / 4)
+- Mapped to tiers: Very Weak, Weak, Medium, Strong, Very Strong
+Limitations:
+- Does not penalize repetition or detect predictable patterns.
+Enhancement ideas:
+- Entropy estimate: log2(poolSize^length) = length * log2(poolSize)
+- Penalize runs/repeats (e.g., aaa, 111, !!!!)
+- Enforce minimum pool size threshold.
+
+## 8. Internationalization (i18n)
+- translations.json fetched at runtime.
+- data-i18n, data-i18n-html, and data-i18n-placeholder attributes drive content updates.
+- Language inferred from URL path segment (/en, /pl, etc.).
+- Preferred language stored in localStorage; root path redirects to saved preference.
+- hreflang tags injected dynamically for SEO.
+
+## 9. SEO Strategy
+- Title + meta description updated per language.
+- Structured headings (H1 + sectional H2).
+- Keyword density around “password generator”, “strong password”, etc.
+- hreflang + x-default for multilingual indexing.
+- Internal cross-links to related tools.
+
+## 10. Accessibility
+Recommended improvements:
+- Add aria-labels to interactive elements (slider, copy button).
+- Use button for language switching or clarify link purpose.
+- Ensure sufficient contrast on colored strength bar.
+- Provide live region (aria-live="polite") for strength updates and copy feedback.
+
+## 11. Security Considerations
+Immediate action:
+- Replace Math.random with crypto.getRandomValues.
+- Prevent clipboard race conditions (use navigator.clipboard.writeText).
+- Avoid claiming cryptographic security until randomness fixed.
+- Consider optional passphrase mode (word list + separators).
+- Do not log or transmit generated passwords.
+
+## 12. Performance
+Lightweight single request (HTML + translations + fonts + ads).
+Optimizations:
+- Defer non-critical scripts.
+- Inline critical CSS (already done).
+- Cache translations.json (HTTP caching headers).
+
+## 13. Suggested Enhancements
+- Ensure each selected category appears at least once.
+- Add toggle for exclusion of repeating characters or sequential patterns.
+- Add passphrase generator (e.g., 4–6 words from curated list).
+- Export feature: batch generate N passwords.
+- Strength algorithm upgrade (entropy + pattern penalties).
+- Service Worker for offline availability.
+- Analytics (privacy-friendly) for option usage frequency.
+
+## 14. Example Secure Generation (Concept Only)
+Algorithm steps:
+1. Build pool after exclusions.
+2. Guarantee inclusion: pick one from each active category.
+3. Fill remaining length using cryptographic random indices.
+4. Shuffle final array (Fisher–Yates with cryptographic randomness).
+5. Return joined string.
+
+## 15. Copy Function Improvements
+Use:
+navigator.clipboard.writeText(password).then(...)
+Fallback to selection only if API unavailable.
+Provide ephemeral visual feedback (e.g., aria-live + status text).
+
+## 16. Error Handling
+- Silent failures in translation updates wrapped in try/catch.
+- Alert used for “no character types selected”; could be replaced with inline error message.
+
+## 17. File & Module Overview (Single Page)
+index.html: Includes HTML, inline CSS, main JS logic.
+translations.json: External language dictionaries (not shown here).
+favicon assets: Branding.
+
+## 18. Maintenance Checklist
+- Review translations for completeness quarterly.
+- Confirm crypto API usage in generation logic after update.
+- Validate SEO tags after language additions.
+- Audit accessibility (contrast, aria usage).
+- Test mobile slider interaction and copy behavior.
+
+## 19. License & Attribution
+Ensure clear site footer statement if open-sourcing. Avoid embedding third-party wordlists without proper licensing if adding passphrase mode.
+
+## 20. Contact
+Support: support@generatepassword.online
+
+## 21. Disclaimer
+Until crypto randomness is implemented, do not market output as “cryptographically secure.” Update marketing text post-change.
+
+## 22. Quick Summary
+Local, multilingual password generator with customizable sets, basic strength meter, and SEO-rich explanatory content. Requires upgrade to cryptographic randomness and stronger strength evaluation for high-assurance use cases.

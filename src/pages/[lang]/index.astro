@@ -1,0 +1,120 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import translations from '../../data/translations.json';
+import Tool from '../../components/Tool.astro';
+import Logo from '../../components/Logo.astro';
+import { siteConfig } from '../../site.config';
+
+export function getStaticPaths() {
+  return Object.keys(translations).map(lang => ({
+    params: { lang },
+    props: { langData: translations[lang] },
+  }));
+}
+
+const { lang } = Astro.params;
+const { langData } = Astro.props;
+
+const languages = {
+  en: "English",
+  nl: "Nederlands",
+  pl: "Polski",
+  es: "Español",
+  vi: "Tiếng Việt",
+  th: "ไทย",
+  sv: "Svenska",
+  hi: "हिन्दी",
+  zh: "中文",
+  fr: "Français",
+  de: "Deutsch",
+  no: "Norsk",
+  da: "Dansk",
+  pt: "Português",
+  id: "Bahasa Indonesia",
+  tr: "Türkçe",
+  uk: "Українська",
+  ru: "Русский",
+  is: "Íslenska",
+  ko: "한국어",
+  ja: "日本語",
+  ar: "العربية"
+};
+---
+
+<Layout title={langData.title} description={langData.metaDescription} lang={lang}>
+  <!-- Language switcher -->
+  <div id="language-switcher">
+    {Object.entries(languages).map(([code, name], index) => (
+      <>
+        <a 
+          href={`/${code}`} 
+          style={code === lang ? "font-weight: bold; color: #f0a500;" : "font-weight: normal; color: #ccc;"}
+        >
+          {name}
+        </a>
+        {index < Object.keys(languages).length - 1 && " | "}
+      </>
+    ))}
+  </div>
+
+  <div id="logo-container">
+    <Logo />
+  </div>
+  <div class="container">
+    <h1>{langData.headerTitle}</h1>
+    <p>{langData.headerSubtitle}</p>
+    
+    <!-- Ad blocks – temporarily hidden -->
+    <div class="ad-space hide-ads">[Google AdSense Space]</div>
+    
+    <!-- Tool Component -->
+    <Tool langData={langData} lang={lang} />
+    
+    <div class="ad-space hide-ads">[Google AdSense Space]</div>
+    
+    <!-- Content Section with SEO-optimized content -->
+    <div class="content-section">
+      <!-- SEO Hero Section -->
+      <section id="hero" class="seo-intro">
+        <h1 set:html={langData.seo.heroTitle}></h1>
+        <p set:html={langData.seo.heroText}></p>
+      </section>
+      
+      <!-- SEO Features Section -->
+      <section id="features" class="seo-features">
+        <h2 set:html={langData.seo.featuresTitle}></h2>
+        <ul set:html={langData.seo.featuresList}></ul>
+      </section>
+      
+      <!-- SEO How It Works Section -->
+      <section id="how-it-works" class="seo-usecases">
+        <h2 set:html={langData.seo.howItWorksTitle}></h2>
+        <ol set:html={langData.seo.howItWorksList}></ol>
+      </section>
+      
+      <!-- SEO FAQ Section -->
+      <section id="faq" class="seo-benefits">
+        <h2 set:html={langData.seo.faqTitle}></h2>
+        <div set:html={langData.seo.faqContent}></div>
+      </section>
+      
+      <!-- SEO Additional Features Section -->
+      <section id="additional-features" class="seo-additional">
+        <h2 set:html={langData.seo.additionalFeaturesTitle}></h2>
+        <div set:html={langData.seo.additionalFeaturesContent}></div>
+      </section>
+      
+      <!-- SEO Summary Section -->
+      <section id="conclusion" class="seo-conclusion">
+        <h2 set:html={langData.seo.conclusionTitle}></h2>
+        <div set:html={langData.seo.conclusionContent}></div>
+      </section>
+    </div>
+    <!-- End of Content Section -->
+    
+    <div class="footer">
+      <p>{langData.footerText}</p>
+      <p>Free online tools: <a href="https://remindlo.com" target="_blank" style="color: #ccc; text-decoration: none;">Przypomnienia SMS</a> | <a href="https://word-counter.online" target="_blank" style="color: #ccc; text-decoration: none;">Word Counter</a> | <a href="https://generate-qr.online" target="_blank" style="color: #ccc; text-decoration: none;">QR Code Generator</a></p>
+    </div>
+  </div>
+</Layout>

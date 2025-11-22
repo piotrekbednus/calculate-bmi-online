@@ -1,0 +1,54 @@
+---
+import { siteConfig } from '../site.config';
+---
+
+<a href="/" class="logo-link">
+  <div class="logo-container">
+    <div class="logo-text">{siteConfig.name.toUpperCase()}</div>
+  </div>
+</a>
+
+<style>
+  .logo-link {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .logo-text {
+    font-family: 'Courier New', Courier, monospace; /* Monospace for a "code" feel, suitable for tools */
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+    border: 2px solid #333;
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 4px 4px 0px #333;
+    transition: all 0.2s ease;
+  }
+  
+  .logo-link:hover .logo-text {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #333;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .logo-text {
+      color: #fff;
+      border-color: #fff;
+      background-color: #222;
+      box-shadow: 4px 4px 0px #fff;
+    }
+    
+    .logo-link:hover .logo-text {
+      box-shadow: 6px 6px 0px #fff;
+    }
+  }
+</style>

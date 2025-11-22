@@ -1,0 +1,158 @@
+---
+import { siteConfig } from '../site.config';
+
+interface Props {
+	title: string;
+	description: string;
+	lang: string;
+}
+
+const { title, description, lang } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, siteConfig.url);
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+        <meta name="description" content={description} />
+        <meta name="og:url" content={`https://generatepassword.online/${lang}`} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" is:inline></script>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7678570789023998" crossorigin="anonymous" is:inline></script>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+    body { 
+      font-family: 'Nunito', sans-serif; 
+      background-color: #121212; 
+      color: white; 
+      text-align: center;
+      margin: 0;
+    }
+    .container { 
+      width: 80%; 
+      margin: auto; 
+      padding: 20px; 
+    }
+    .ad-space { 
+      width: 100%; 
+      height: 90px; 
+      background: #222; 
+      margin: 20px 0; 
+      text-align: center; 
+      line-height: 90px; 
+      color: white;
+    }
+    /* Temporarily hide ad blocks – remove the .hide-ads class to show ads */
+    .hide-ads { display: none; }
+    #logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 20px 0;
+      padding-left: 20px;
+      overflow-x: hidden; /* Prevent horizontal scroll */
+      flex-wrap: wrap; /* Allow wrapping on very small screens */
+    }
+    #logo-container a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      max-width: 100%; /* Ensure the link doesn't overflow */
+    }
+    /* Updated logo text with responsive sizing */
+    .logo-text { 
+      font-size: 20px; /* Reduced default size */
+      font-weight: bold; 
+      margin-left: 10px;
+      white-space: nowrap; /* Keep text on one line */
+      overflow: hidden; /* Hide overflow */
+      text-overflow: ellipsis; /* Add ellipsis if needed */
+    }
+    #website-logo {
+      width: 48px;  /* Slightly smaller logo */
+      height: auto;
+      display: block;
+      min-width: 48px; /* Ensure the logo doesn't shrink too much */
+    }
+    /* Media query for smaller screens */
+    @media (max-width: 480px) {
+      .logo-text {
+        font-size: 16px; /* Even smaller on mobile */
+      }
+      #website-logo {
+        width: 36px;
+        min-width: 36px;
+      }
+      #logo-container {
+        padding-left: 10px;
+      }
+    }
+    
+    button { 
+      height: 40px; 
+      padding: 10px 20px; 
+      font-size: 16px; 
+      background-color: #f0a500;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    button:hover {
+      background-color: #ffc107;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #555;
+      text-align: center;
+      font-size: 14px;
+      color: #ccc;
+    }
+    /* Language switcher */
+    #language-switcher { 
+      margin: 10px 0; 
+      font-size: 14px; 
+    }
+    #language-switcher a { 
+      color: #ccc; 
+      text-decoration: none; 
+      margin: 0 5px; 
+    }
+    /* SEO content blocks with yellow borders (#f0a500) */
+    .seo-content { 
+      margin-top: 60px; 
+    }
+    .seo-intro, .seo-features, .seo-usecases, .seo-benefits, .seo-additional, .seo-conclusion {
+      padding: 20px;
+      background-color: #1a1a1a;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      text-align: left;
+      border: 2px solid #f0a500;
+    }
+    .seo-intro h2, .seo-features h2, .seo-usecases h2, .seo-benefits h2, .seo-additional h2, .seo-conclusion h2 {
+      color: #f0a500;
+    }
+    
+    /* Password Generator Styles moved to Tool.astro */
+</style>
