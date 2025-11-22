@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import translations from '../../data/translations.json';
 import Tool from '../../components/Tool.astro';
-import Logo from '../../components/Logo.astro';
 import { siteConfig } from '../../site.config';
 
 export function getStaticPaths() {
@@ -57,9 +56,6 @@ const languages = {
     ))}
   </div>
 
-  <div id="logo-container">
-    <Logo />
-  </div>
   <div class="container">
     <h1>{langData.headerTitle}</h1>
     <p>{langData.headerSubtitle}</p>

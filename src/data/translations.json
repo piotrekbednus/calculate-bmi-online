@@ -20,7 +20,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -58,7 +63,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -96,7 +106,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -134,7 +149,12 @@
       "overweight": "Nadwaga",
       "obesity": "Otyłość",
       "metric": "Metryczne",
-      "imperial": "Imperialne"
+      "imperial": "Imperialne",
+      "weightPlaceholder": "Wpisz swoją wagę",
+      "heightPlaceholder": "Wpisz swój wzrost",
+      "weightPlaceholderLbs": "Wpisz swoją wagę",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Darmowy Kalkulator BMI Online – Sprawdź Swój Stan Zdrowia",
@@ -172,7 +192,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -210,7 +235,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -248,7 +278,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -286,7 +321,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -324,7 +364,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -362,7 +407,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -400,7 +450,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -438,7 +493,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -476,7 +536,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -514,7 +579,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -552,7 +622,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -590,7 +665,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -628,7 +708,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -666,7 +751,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -704,7 +794,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -742,7 +837,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -780,7 +880,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",
@@ -818,7 +923,12 @@
       "overweight": "Overweight",
       "obesity": "Obesity",
       "metric": "Metric",
-      "imperial": "Imperial"
+      "imperial": "Imperial",
+      "weightPlaceholder": "Put your weight here",
+      "heightPlaceholder": "Put your height here",
+      "weightPlaceholderLbs": "Put your weight here",
+      "heightPlaceholderFt": "ft",
+      "heightPlaceholderIn": "in"
     },
     "seo": {
       "heroTitle": "Free Online BMI Calculator – Check Your Health Status",

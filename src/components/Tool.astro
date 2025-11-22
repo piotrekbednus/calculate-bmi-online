@@ -23,25 +23,25 @@ const { langData, lang } = Astro.props;
   <div class="input-group" id="metricInputs">
     <div class="input-field">
       <label for="weightMetric">{langData.bmiCalculator.weightLabel} (kg)</label>
-      <input type="number" id="weightMetric" placeholder="70" min="1" step="0.1">
+      <input type="number" id="weightMetric" placeholder={langData.bmiCalculator.weightPlaceholder} min="1" step="0.1">
     </div>
     <div class="input-field">
       <label for="heightMetric">{langData.bmiCalculator.heightLabel} (cm)</label>
-      <input type="number" id="heightMetric" placeholder="170" min="1" step="1">
+      <input type="number" id="heightMetric" placeholder={langData.bmiCalculator.heightPlaceholder} min="1" step="1">
     </div>
   </div>
 
   <div class="input-group hidden" id="imperialInputs">
     <div class="input-field">
       <label for="weightImperial">{langData.bmiCalculator.weightLabel} (lbs)</label>
-      <input type="number" id="weightImperial" placeholder="150" min="1" step="0.1">
+      <input type="number" id="weightImperial" placeholder={langData.bmiCalculator.weightPlaceholderLbs} min="1" step="0.1">
     </div>
     <div class="input-field double-input">
       <label>{langData.bmiCalculator.heightLabel}</label>
       <div class="feet-inches">
-        <input type="number" id="heightFeet" placeholder="5" min="1" step="1">
+        <input type="number" id="heightFeet" placeholder={langData.bmiCalculator.heightPlaceholderFt} min="1" step="1">
         <span>ft</span>
-        <input type="number" id="heightInches" placeholder="7" min="0" max="11" step="1">
+        <input type="number" id="heightInches" placeholder={langData.bmiCalculator.heightPlaceholderIn} min="0" max="11" step="1">
         <span>in</span>
       </div>
     </div>
@@ -192,6 +192,7 @@ const { langData, lang } = Astro.props;
     display: flex;
     align-items: center;
     gap: 5px;
+    color: #333; /* Fix visibility on white background */
   }
 
   .input-group {
@@ -228,6 +229,11 @@ const { langData, lang } = Astro.props;
   .double-input input {
     width: 100%;
   }
+  
+  .double-input span {
+    color: #333;
+    font-weight: bold;
+  }
 
   .hidden {
     display: none !important;
@@ -235,6 +241,7 @@ const { langData, lang } = Astro.props;
 
   .action-buttons {
     text-align: center;
+    margin-top: 3rem; /* Increased spacing */
   }
 
   #calculateButton {
@@ -248,6 +255,10 @@ const { langData, lang } = Astro.props;
     transition: background-color 0.3s;
     font-weight: bold;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
   }
 
   #calculateButton:hover {
