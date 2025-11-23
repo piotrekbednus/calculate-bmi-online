@@ -165,5 +165,11 @@ const canonicalURL = new URL(Astro.url.pathname, siteConfig.url);
       color: #f0a500;
     }
     
+    /* Hide automatic list numbering when using no-list-style class */
+    .no-list-style {
+      list-style: none;
+      padding-left: 0;
+    }
+    
     /* Password Generator Styles moved to Tool.astro */
 </style>
