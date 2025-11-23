@@ -23,25 +23,25 @@ const { langData, lang } = Astro.props;
   <div class="input-group" id="metricInputs">
     <div class="input-field">
       <label for="weightMetric">{langData.bmiCalculator.weightLabel} (kg)</label>
-      <input type="number" id="weightMetric" placeholder={langData.bmiCalculator.weightPlaceholder} min="1" step="0.1">
+      <input type="number" id="weightMetric" placeholder={langData.bmiCalculator.weightPlaceholder} min="1" step="0.1" inputmode="decimal">
     </div>
     <div class="input-field">
       <label for="heightMetric">{langData.bmiCalculator.heightLabel} (cm)</label>
-      <input type="number" id="heightMetric" placeholder={langData.bmiCalculator.heightPlaceholder} min="1" step="1">
+      <input type="number" id="heightMetric" placeholder={langData.bmiCalculator.heightPlaceholder} min="1" step="1" inputmode="numeric">
     </div>
   </div>
 
   <div class="input-group hidden" id="imperialInputs">
     <div class="input-field">
       <label for="weightImperial">{langData.bmiCalculator.weightLabel} (lbs)</label>
-      <input type="number" id="weightImperial" placeholder={langData.bmiCalculator.weightPlaceholderLbs} min="1" step="0.1">
+      <input type="number" id="weightImperial" placeholder={langData.bmiCalculator.weightPlaceholderLbs} min="1" step="0.1" inputmode="decimal">
     </div>
     <div class="input-field double-input">
       <label>{langData.bmiCalculator.heightLabel}</label>
       <div class="feet-inches">
-        <input type="number" id="heightFeet" placeholder={langData.bmiCalculator.heightPlaceholderFt} min="1" step="1">
+        <input type="number" id="heightFeet" placeholder={langData.bmiCalculator.heightPlaceholderFt} min="1" step="1" inputmode="numeric">
         <span>ft</span>
-        <input type="number" id="heightInches" placeholder={langData.bmiCalculator.heightPlaceholderIn} min="0" max="11" step="1">
+        <input type="number" id="heightInches" placeholder={langData.bmiCalculator.heightPlaceholderIn} min="0" max="11" step="1" inputmode="numeric">
         <span>in</span>
       </div>
     </div>
