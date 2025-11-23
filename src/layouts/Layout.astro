@@ -17,6 +17,9 @@ const canonicalURL = new URL(Astro.url.pathname, siteConfig.url);
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+        <!-- Security Headers -->
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <link rel="canonical" href={canonicalURL} />
         <meta name="description" content={description} />
         <meta name="og:url" content={`${siteConfig.url}/${lang}`} />
         <meta property="og:title" content={title} />
