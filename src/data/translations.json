@@ -28,16 +28,16 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Free Online BMI Calculator – Check Your Weight and Health",
+      "heroTitle": "Free Online BMI Calculator - Check Your Weight and Health",
       "heroText": "Use our <strong>free BMI calculator</strong> to quickly estimate your <strong>Body Mass Index (BMI)</strong> and find out which weight category you are in. Choose between metric and imperial units to get an instant result and better understand your health status.",
       "featuresTitle": "Why Use This BMI Calculator?",
-      "featuresList": "<li><strong>Completely Free:</strong> Check your BMI as often as you want with no cost or limits.</li><li><strong>Metric & Imperial Units:</strong> Enter your weight and height in kg/cm or lbs/ft+in – whatever works best for you.</li><li><strong>Instant Results:</strong> See your BMI value and category immediately after you click the button.</li><li><strong>Privacy First:</strong> All calculations run directly in your browser – we never send or store your health data.</li>",
+      "featuresList": "<li><strong>Completely Free:</strong> Check your BMI as often as you want with no cost or limits.</li><li><strong>Metric & Imperial Units:</strong> Enter your weight and height in kg/cm or lbs/ft+in - whatever works best for you.</li><li><strong>Instant Results:</strong> See your BMI value and category immediately after you click the button.</li><li><strong>Privacy First:</strong> All calculations run directly in your browser - we never send or store your health data.</li>",
       "howItWorksTitle": "How to Use the BMI Calculator",
       "howItWorksList": "<li><strong>1. Select Units:</strong> Choose either Metric or Imperial units.</li><li><strong>2. Enter Your Weight:</strong> Type your current weight into the weight field.</li><li><strong>3. Enter Your Height:</strong> Add your height in centimeters or feet/inches.</li><li><strong>4. Calculate BMI:</strong> Click “Calculate BMI” to see your BMI score and weight category.</li>",
-      "faqTitle": "BMI Calculator – Frequently Asked Questions",
+      "faqTitle": "BMI Calculator - Frequently Asked Questions",
       "faqContent": "<h3>What is BMI?</h3><p>BMI stands for Body Mass Index. It is a simple number based on your height and weight that helps classify you as underweight, normal weight, overweight, or obese.</p><h3>How accurate is the BMI result?</h3><p>BMI is a quick screening tool, not a medical diagnosis. It does not distinguish between muscle and fat and may be less accurate for athletes, pregnant women, very muscular people, or older adults. Always talk to a healthcare professional for personal advice.</p>",
       "additionalFeaturesTitle": "BMI Categories and What They Mean",
-      "additionalFeaturesContent": "<h3>Underweight</h3><p>BMI less than 18.5 – your weight may be too low, and you might benefit from gaining weight under medical guidance.</p><h3>Normal Weight</h3><p>BMI between 18.5 and 24.9 – this range is considered a healthy weight for most adults.</p><h3>Overweight</h3><p>BMI between 25 and 29.9 – you may be carrying extra weight that could increase health risks over time.</p><h3>Obesity</h3><p>BMI of 30 or higher – this category is linked to a higher risk of conditions like heart disease, diabetes, and high blood pressure.</p>",
+      "additionalFeaturesContent": "<h3>Underweight</h3><p>BMI less than 18.5 - your weight may be too low, and you might benefit from gaining weight under medical guidance.</p><h3>Normal Weight</h3><p>BMI between 18.5 and 24.9 - this range is considered a healthy weight for most adults.</p><h3>Overweight</h3><p>BMI between 25 and 29.9 - you may be carrying extra weight that could increase health risks over time.</p><h3>Obesity</h3><p>BMI of 30 or higher - this category is linked to a higher risk of conditions like heart disease, diabetes, and high blood pressure.</p>",
       "conclusionTitle": "Track Your BMI and Take Care of Your Health",
       "conclusionContent": "<p>Regularly checking your BMI is a simple way to keep track of changes in your weight over time. Use our free online BMI calculator whenever you need a quick health check, and discuss your results with a doctor or nutrition expert if you have concerns.</p>"
     }
@@ -71,16 +71,16 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Gratis Online BMI Calculator – Controleer Je Gewicht en Gezondheid",
+      "heroTitle": "Gratis Online BMI Calculator - Controleer Je Gewicht en Gezondheid",
       "heroText": "Met onze <strong>gratis BMI-calculator</strong> bereken je snel je <strong>Body Mass Index (BMI)</strong> en zie je direct in welke gewichtscategorie je valt. Kies tussen metrische en imperiale eenheden om eenvoudig inzicht te krijgen in je gewicht en gezondheid.",
       "featuresTitle": "Waarom Onze BMI Calculator Gebruiken?",
-      "featuresList": "<li><strong>Helemaal gratis:</strong> Bereken zo vaak je wilt je BMI zonder beperkingen.</li><li><strong>Metrisch en imperiaal:</strong> Ondersteuning voor zowel kg/cm als lbs/ft+in.</li><li><strong>Direct resultaat:</strong> Na het klikken op de knop zie je meteen je BMI en categorie.</li><li><strong>Privacyvriendelijk:</strong> Alle berekeningen gebeuren in je browser – je gegevens worden niet opgeslagen.</li>",
+      "featuresList": "<li><strong>Helemaal gratis:</strong> Bereken zo vaak je wilt je BMI zonder beperkingen.</li><li><strong>Metrisch en imperiaal:</strong> Ondersteuning voor zowel kg/cm als lbs/ft+in.</li><li><strong>Direct resultaat:</strong> Na het klikken op de knop zie je meteen je BMI en categorie.</li><li><strong>Privacyvriendelijk:</strong> Alle berekeningen gebeuren in je browser - je gegevens worden niet opgeslagen.</li>",
       "howItWorksTitle": "Hoe Werkt de BMI Calculator?",
       "howItWorksList": "<li><strong>1. Kies eenheid:</strong> Selecteer metrisch of imperiaal.</li><li><strong>2. Voer je gewicht in:</strong> Vul je huidige gewicht in.</li><li><strong>3. Voer je lengte in:</strong> Vul je lengte in centimeters of in voeten en inches in.</li><li><strong>4. Bereken BMI:</strong> Klik op “BMI berekenen” om je BMI en gewichtscategorie te zien.</li>",
       "faqTitle": "Veelgestelde Vragen over BMI",
       "faqContent": "<h3>Wat is BMI precies?</h3><p>BMI staat voor Body Mass Index. Het is een eenvoudige verhouding tussen lengte en gewicht die helpt om je gewicht in te delen als ondergewicht, gezond gewicht, overgewicht of obesitas.</p><h3>Is BMI altijd betrouwbaar?</h3><p>BMI is een snelle indicatie, geen medische diagnose. Het houdt geen rekening met spiermassa, leeftijd of lichaamsbouw en kan daardoor minder geschikt zijn voor sporters, zwangere vrouwen of ouderen. Raadpleeg bij twijfel altijd een arts.</p>",
       "additionalFeaturesTitle": "BMI Categorieën Uitleg",
-      "additionalFeaturesContent": "<h3>Ondergewicht</h3><p>BMI lager dan 18,5 – je weegt mogelijk te weinig en het kan verstandig zijn om met een professional naar gewichtstoename te kijken.</p><h3>Gezond gewicht</h3><p>BMI tussen 18,5 en 24,9 – dit wordt beschouwd als een gezonde gewichtsklasse voor de meeste volwassenen.</p><h3>Overgewicht</h3><p>BMI tussen 25 en 29,9 – extra kilo’s kunnen het risico op gezondheidsproblemen verhogen.</p><h3>Obesitas</h3><p>BMI van 30 of hoger – er is een verhoogd risico op aandoeningen zoals hart- en vaatziekten en diabetes.</p>",
+      "additionalFeaturesContent": "<h3>Ondergewicht</h3><p>BMI lager dan 18,5 - je weegt mogelijk te weinig en het kan verstandig zijn om met een professional naar gewichtstoename te kijken.</p><h3>Gezond gewicht</h3><p>BMI tussen 18,5 en 24,9 - dit wordt beschouwd als een gezonde gewichtsklasse voor de meeste volwassenen.</p><h3>Overgewicht</h3><p>BMI tussen 25 en 29,9 - extra kilo’s kunnen het risico op gezondheidsproblemen verhogen.</p><h3>Obesitas</h3><p>BMI van 30 of hoger - er is een verhoogd risico op aandoeningen zoals hart- en vaatziekten en diabetes.</p>",
       "conclusionTitle": "Blijf Je Gezondheid Volgen met BMI",
       "conclusionContent": "<p>Door regelmatig je BMI te controleren, krijg je eenvoudig inzicht in veranderingen in je gewicht. Gebruik onze gratis BMI-calculator als startpunt en bespreek vragen of zorgen altijd met een arts of diëtist.</p>"
     }
@@ -89,7 +89,7 @@
     "title": "Gratis BMI-räknare Online | Beräkna ditt Body Mass Index",
     "metaDescription": "Gratis online BMI-räknare. Beräkna ditt Body Mass Index (BMI) direkt med metriska eller imperiala enheter och se vilken viktklass du tillhör.",
     "headerTitle": "Gratis BMI-räknare Online",
-    "headerSubtitle": "Beräkna ditt Body Mass Index på några sekunder – ingen registrering krävs.",
+    "headerSubtitle": "Beräkna ditt Body Mass Index på några sekunder - ingen registrering krävs.",
     "countButton": "Beräkna BMI",
     "footerText": "Har du problem eller vill lämna feedback? Kontakta oss på support@calculate-bmi.online",
     "alertMessages": {
@@ -114,16 +114,16 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Gratis Online BMI-räknare – Få Koll på Vikt och Hälsa",
+      "heroTitle": "Gratis Online BMI-räknare - Få Koll på Vikt och Hälsa",
       "heroText": "Med vår <strong>gratis BMI-räknare</strong> kan du snabbt räkna ut ditt <strong>Body Mass Index (BMI)</strong> och se om du ligger på undervikt, normalvikt, övervikt eller fetma. Välj metriska eller imperiala enheter och få ett direkt resultat.",
       "featuresTitle": "Fördelar med Vår BMI-räknare",
-      "featuresList": "<li><strong>Helt gratis:</strong> Använd räknaren hur många gånger du vill utan kostnad.</li><li><strong>Metriskt & imperialt:</strong> Stöd för både kg/cm och lbs/ft+in.</li><li><strong>Snabba resultat:</strong> Du får ditt BMI-värde och din kategori direkt.</li><li><strong>Integritetsvänlig:</strong> Alla beräkningar sker lokalt i din webbläsare – inga hälsodata sparas.</li>",
+      "featuresList": "<li><strong>Helt gratis:</strong> Använd räknaren hur många gånger du vill utan kostnad.</li><li><strong>Metriskt & imperialt:</strong> Stöd för både kg/cm och lbs/ft+in.</li><li><strong>Snabba resultat:</strong> Du får ditt BMI-värde och din kategori direkt.</li><li><strong>Integritetsvänlig:</strong> Alla beräkningar sker lokalt i din webbläsare - inga hälsodata sparas.</li>",
       "howItWorksTitle": "Så Använder du BMI-räknaren",
       "howItWorksList": "<li><strong>1. Välj enheter:</strong> Välj metriskt eller imperialt.</li><li><strong>2. Ange vikt:</strong> Fyll i din aktuella vikt.</li><li><strong>3. Ange längd:</strong> Fyll i din längd i centimeter eller fot/tum.</li><li><strong>4. Beräkna:</strong> Klicka på ”Beräkna BMI” för att se resultatet.</li>",
       "faqTitle": "Vanliga Frågor om BMI",
-      "faqContent": "<h3>Vad är BMI?</h3><p>BMI står för Body Mass Index och är ett mått som baseras på längd och vikt. Det används som en enkel indikator på om du har undervikt, normalvikt, övervikt eller fetma.</p><h3>Är BMI alltid rättvisande?</h3><p>BMI är ett enkelt screeningverktyg – inte en fullständig medicinsk bedömning. Det tar inte hänsyn till muskelmassa, kroppssammansättning eller ålder och kan därför vara mindre träffsäkert för till exempel elitidrottare, gravida eller äldre personer.</p>",
+      "faqContent": "<h3>Vad är BMI?</h3><p>BMI står för Body Mass Index och är ett mått som baseras på längd och vikt. Det används som en enkel indikator på om du har undervikt, normalvikt, övervikt eller fetma.</p><h3>Är BMI alltid rättvisande?</h3><p>BMI är ett enkelt screeningverktyg - inte en fullständig medicinsk bedömning. Det tar inte hänsyn till muskelmassa, kroppssammansättning eller ålder och kan därför vara mindre träffsäkert för till exempel elitidrottare, gravida eller äldre personer.</p>",
       "additionalFeaturesTitle": "Förstå Dina BMI-nivåer",
-      "additionalFeaturesContent": "<h3>Undervikt</h3><p>BMI under 18,5 – kan tyda på att du väger för lite. Rådgör gärna med vårdpersonal om du är orolig.</p><h3>Normalvikt</h3><p>BMI mellan 18,5 och 24,9 – anses som ett hälsosamt spann för de flesta vuxna.</p><h3>Övervikt</h3><p>BMI mellan 25 och 29,9 – extra kilon kan på sikt öka risken för olika sjukdomar.</p><h3>Fetma</h3><p>BMI på 30 eller mer – förknippas med ökad risk för bland annat hjärt-kärlsjukdom och typ 2-diabetes.</p>",
+      "additionalFeaturesContent": "<h3>Undervikt</h3><p>BMI under 18,5 - kan tyda på att du väger för lite. Rådgör gärna med vårdpersonal om du är orolig.</p><h3>Normalvikt</h3><p>BMI mellan 18,5 och 24,9 - anses som ett hälsosamt spann för de flesta vuxna.</p><h3>Övervikt</h3><p>BMI mellan 25 och 29,9 - extra kilon kan på sikt öka risken för olika sjukdomar.</p><h3>Fetma</h3><p>BMI på 30 eller mer - förknippas med ökad risk för bland annat hjärt-kärlsjukdom och typ 2-diabetes.</p>",
       "conclusionTitle": "Följ Din Viktutveckling med BMI",
       "conclusionContent": "<p>Att hålla koll på BMI över tid kan hjälpa dig att upptäcka förändringar i vikt och ta hand om din hälsa i tid. Använd vår gratis BMI-räknare som ett första steg och kontakta vården för personlig rådgivning.</p>"
     }
@@ -157,16 +157,16 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Darmowy Kalkulator BMI – Sprawdź Wagę i Stan Zdrowia",
+      "heroTitle": "Darmowy Kalkulator BMI - Sprawdź Wagę i Stan Zdrowia",
       "heroText": "Nasz <strong>darmowy kalkulator BMI</strong> pozwala w kilka sekund obliczyć <strong>Wskaźnik Masy Ciała (BMI)</strong> i sprawdzić, czy masz niedowagę, prawidłową masę ciała, nadwagę czy otyłość. Wybierz jednostki metryczne lub imperialne i od razu poznaj wynik.",
       "featuresTitle": "Dlaczego Warto Korzystać z Tego Kalkulatora BMI?",
-      "featuresList": "<li><strong>Całkowicie za darmo:</strong> Możesz obliczać BMI tyle razy, ile chcesz – bez opłat.</li><li><strong>Jednostki metryczne i imperialne:</strong> Obsługa kg/cm oraz lbs/ft+in.</li><li><strong>Błyskawiczny wynik:</strong> Po kliknięciu przycisku natychmiast zobaczysz swój wynik BMI i kategorię.</li><li><strong>Szanujemy prywatność:</strong> Obliczenia odbywają się wyłącznie w Twojej przeglądarce – nie zapisujemy żadnych danych zdrowotnych.</li>",
+      "featuresList": "<li><strong>Całkowicie za darmo:</strong> Możesz obliczać BMI tyle razy, ile chcesz - bez opłat.</li><li><strong>Jednostki metryczne i imperialne:</strong> Obsługa kg/cm oraz lbs/ft+in.</li><li><strong>Błyskawiczny wynik:</strong> Po kliknięciu przycisku natychmiast zobaczysz swój wynik BMI i kategorię.</li><li><strong>Szanujemy prywatność:</strong> Obliczenia odbywają się wyłącznie w Twojej przeglądarce - nie zapisujemy żadnych danych zdrowotnych.</li>",
       "howItWorksTitle": "Jak Korzystać z Kalkulatora BMI?",
       "howItWorksList": "<li><strong>1. Wybierz jednostki:</strong> Zaznacz jednostki metryczne lub imperialne.</li><li><strong>2. Wpisz wagę:</strong> Podaj swoją aktualną wagę.</li><li><strong>3. Wpisz wzrost:</strong> Podaj wzrost w centymetrach lub w stopach i calach.</li><li><strong>4. Oblicz BMI:</strong> Kliknij „Oblicz BMI”, aby zobaczyć wynik oraz kategorię wagową.</li>",
       "faqTitle": "Najczęstsze Pytania o BMI",
       "faqContent": "<h3>Co to jest BMI?</h3><p>BMI (Body Mass Index) to prosty wskaźnik oparty na wzroście i masie ciała, który pomaga ocenić, czy Twoja waga mieści się w zdrowym zakresie.</p><h3>Czy BMI jest dokładnym wskaźnikiem zdrowia?</h3><p>BMI jest narzędziem orientacyjnym, a nie diagnozą lekarską. Nie uwzględnia składu ciała ani poziomu tkanki mięśniowej, dlatego może nie być idealny m.in. dla sportowców, kobiet w ciąży czy osób starszych. W przypadku wątpliwości skonsultuj się z lekarzem.</p>",
-      "additionalFeaturesTitle": "Kategorie BMI – Co Oznaczają?",
-      "additionalFeaturesContent": "<h3>Niedowaga</h3><p>BMI poniżej 18,5 – masa ciała może być zbyt niska, co wiąże się z większym ryzykiem problemów zdrowotnych.</p><h3>Waga prawidłowa</h3><p>BMI między 18,5 a 24,9 – zakres uznawany za zdrową masę ciała u większości dorosłych.</p><h3>Nadwaga</h3><p>BMI między 25 a 29,9 – dodatkowe kilogramy mogą zwiększać ryzyko chorób w przyszłości.</p><h3>Otyłość</h3><p>BMI 30 lub wyższe – znacznie podnosi ryzyko m.in. chorób serca, nadciśnienia i cukrzycy typu 2.</p>",
+      "additionalFeaturesTitle": "Kategorie BMI - Co Oznaczają?",
+      "additionalFeaturesContent": "<h3>Niedowaga</h3><p>BMI poniżej 18,5 - masa ciała może być zbyt niska, co wiąże się z większym ryzykiem problemów zdrowotnych.</p><h3>Waga prawidłowa</h3><p>BMI między 18,5 a 24,9 - zakres uznawany za zdrową masę ciała u większości dorosłych.</p><h3>Nadwaga</h3><p>BMI między 25 a 29,9 - dodatkowe kilogramy mogą zwiększać ryzyko chorób w przyszłości.</p><h3>Otyłość</h3><p>BMI 30 lub wyższe - znacznie podnosi ryzyko m.in. chorób serca, nadciśnienia i cukrzycy typu 2.</p>",
       "conclusionTitle": "Monitoruj Swoje BMI i Dbaj o Zdrowie",
       "conclusionContent": "<p>Regularne sprawdzanie BMI pomaga zauważyć zmiany masy ciała i szybciej reagować. Traktuj nasz darmowy kalkulator BMI jako punkt startowy, a w razie wątpliwości skontaktuj się z lekarzem lub dietetykiem.</p>"
     }
@@ -200,7 +200,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Calculadora de IMC Online – Controla Tu Peso y Salud",
+      "heroTitle": "Calculadora de IMC Online - Controla Tu Peso y Salud",
       "heroText": "Nuestra <strong>calculadora de IMC gratuita</strong> te permite calcular rápidamente tu <strong>Índice de Masa Corporal (IMC)</strong> y saber si estás en bajo peso, peso normal, sobrepeso u obesidad. Elige unidades métricas o imperiales y obtén un resultado inmediato.",
       "featuresTitle": "Ventajas de Nuestra Calculadora de IMC",
       "featuresList": "<li><strong>Totalmente gratis:</strong> Calcula tu IMC tantas veces como quieras sin coste.</li><li><strong>Unidades métricas e imperiales:</strong> Introduce tu peso y altura en kg/cm o lbs/ft+in.</li><li><strong>Resultados al instante:</strong> Descubre tu valor de IMC y categoría de peso inmediatamente.</li><li><strong>Privacidad garantizada:</strong> Todos los cálculos se realizan en tu navegador; no almacenamos tus datos de salud.</li>",
@@ -209,7 +209,7 @@
       "faqTitle": "Preguntas Frecuentes sobre el IMC",
       "faqContent": "<h3>¿Qué es el IMC?</h3><p>El Índice de Masa Corporal (IMC) es una relación entre tu peso y tu altura que se usa para clasificar el estado de peso en adultos.</p><h3>¿Es el IMC un indicador perfecto de salud?</h3><p>No. El IMC es una herramienta de cribado sencilla, pero no diferencia entre masa muscular y grasa y no sustituye la evaluación médica. Puede ser menos preciso en deportistas, embarazadas o personas mayores.</p>",
       "additionalFeaturesTitle": "Significado de las Categorías de IMC",
-      "additionalFeaturesContent": "<h3>Bajo peso</h3><p>IMC menor de 18,5 – puede indicar que tu peso es demasiado bajo y conviene revisar tu alimentación con un profesional.</p><h3>Peso normal</h3><p>IMC entre 18,5 y 24,9 – rango considerado saludable para la mayoría de los adultos.</p><h3>Sobrepeso</h3><p>IMC entre 25 y 29,9 – el exceso de peso puede aumentar el riesgo de problemas de salud a medio y largo plazo.</p><h3>Obesidad</h3><p>IMC de 30 o más – se asocia con un riesgo más elevado de enfermedades como diabetes tipo 2, hipertensión y enfermedades cardiovasculares.</p>",
+      "additionalFeaturesContent": "<h3>Bajo peso</h3><p>IMC menor de 18,5 - puede indicar que tu peso es demasiado bajo y conviene revisar tu alimentación con un profesional.</p><h3>Peso normal</h3><p>IMC entre 18,5 y 24,9 - rango considerado saludable para la mayoría de los adultos.</p><h3>Sobrepeso</h3><p>IMC entre 25 y 29,9 - el exceso de peso puede aumentar el riesgo de problemas de salud a medio y largo plazo.</p><h3>Obesidad</h3><p>IMC de 30 o más - se asocia con un riesgo más elevado de enfermedades como diabetes tipo 2, hipertensión y enfermedades cardiovasculares.</p>",
       "conclusionTitle": "Controla Tu IMC para Cuidar Tu Salud",
       "conclusionContent": "<p>Revisar tu IMC de forma periódica es una manera sencilla de seguir los cambios de peso. Utiliza nuestra calculadora de IMC gratuita como punto de partida y consulta con un médico o nutricionista si tienes dudas sobre tu resultado.</p>"
     }
@@ -243,7 +243,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Máy Tính BMI Trực Tuyến – Kiểm Tra Cân Nặng & Sức Khỏe",
+      "heroTitle": "Máy Tính BMI Trực Tuyến - Kiểm Tra Cân Nặng & Sức Khỏe",
       "heroText": "Sử dụng <strong>máy tính BMI miễn phí</strong> để tính nhanh <strong>Chỉ Số Khối Cơ Thể (BMI)</strong> và xác định bạn thuộc nhóm thiếu cân, bình thường, thừa cân hay béo phì. Hỗ trợ đơn vị mét và imperial để bạn nhận kết quả ngay lập tức.",
       "featuresTitle": "Vì Sao Nên Dùng Máy Tính BMI Này?",
       "featuresList": "<li><strong>Miễn phí hoàn toàn:</strong> Tính BMI bao nhiêu lần tùy thích.</li><li><strong>Hỗ trợ nhiều đơn vị:</strong> Dùng kg/cm hoặc lbs/ft+in tùy thói quen.</li><li><strong>Kết quả tức thì:</strong> Xem chỉ số BMI và phân loại ngay sau khi nhấn nút.</li><li><strong>Bảo mật tuyệt đối:</strong> Tất cả phép tính được thực hiện trên trình duyệt, không lưu trữ dữ liệu.</li>",
@@ -252,7 +252,7 @@
       "faqTitle": "Câu Hỏi Thường Gặp về BMI",
       "faqContent": "<h3>BMI là gì?</h3><p>BMI là chỉ số khối cơ thể, dựa trên cân nặng và chiều cao để đánh giá tình trạng cân nặng của người trưởng thành.</p><h3>BMI có chính xác không?</h3><p>BMI là công cụ sàng lọc nhanh, không phải chẩn đoán y khoa. Nó không phân biệt cơ và mỡ, nên có thể không chính xác với vận động viên, phụ nữ mang thai hoặc người lớn tuổi.</p>",
       "additionalFeaturesTitle": "Tìm Hiểu Các Nhóm BMI",
-      "additionalFeaturesContent": "<h3>Thiếu cân</h3><p>BMI &lt; 18,5 – có thể bạn cần tăng cân.</p><h3>Bình thường</h3><p>BMI 18,5–24,9 – mức cân nặng khỏe mạnh.</p><h3>Thừa cân</h3><p>BMI 25–29,9 – có thể tăng nguy cơ vấn đề sức khỏe.</p><h3>Béo phì</h3><p>BMI ≥ 30 – nguy cơ cao mắc các bệnh tim mạch, tiểu đường…</p>",
+      "additionalFeaturesContent": "<h3>Thiếu cân</h3><p>BMI &lt; 18,5 - có thể bạn cần tăng cân.</p><h3>Bình thường</h3><p>BMI 18,5-24,9 - mức cân nặng khỏe mạnh.</p><h3>Thừa cân</h3><p>BMI 25-29,9 - có thể tăng nguy cơ vấn đề sức khỏe.</p><h3>Béo phì</h3><p>BMI ≥ 30 - nguy cơ cao mắc các bệnh tim mạch, tiểu đường…</p>",
       "conclusionTitle": "Theo Dõi BMI Để Cải Thiện Sức Khỏe",
       "conclusionContent": "<p>Kiểm tra BMI thường xuyên giúp theo dõi biến động cân nặng theo thời gian. Hãy dùng công cụ miễn phí này và tham khảo chuyên gia y tế nếu bạn lo lắng về kết quả.</p>"
     }
@@ -286,7 +286,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "เครื่องคำนวณ BMI ออนไลน์ – ตรวจสอบสุขภาพของคุณได้ทันที",
+      "heroTitle": "เครื่องคำนวณ BMI ออนไลน์ - ตรวจสอบสุขภาพของคุณได้ทันที",
       "heroText": "ใช้ <strong>เครื่องคำนวณ BMI ฟรี</strong> ของเราเพื่อคำนวณ <strong>ดัชนีมวลกาย (BMI)</strong> ของคุณอย่างรวดเร็ว และดูว่าคุณอยู่ในกลุ่มน้ำหนักใด รองรับทั้งหน่วยเมตริกและอิมพีเรียล พร้อมผลลัพธ์ทันที",
       "featuresTitle": "ทำไมต้องใช้เครื่องคำนวณ BMI นี้?",
       "featuresList": "<li><strong>ใช้งานฟรี:</strong> ตรวจสอบ BMI ได้ไม่จำกัดครั้ง</li><li><strong>รองรับสองระบบ:</strong> เลือกใช้ kg/cm หรือ lbs/ft+in ได้ตามความสะดวก</li><li><strong>รู้ผลทันที:</strong> แสดงค่า BMI และหมวดหมู่น้ำหนักทันที</li><li><strong>ปลอดภัยและเป็นส่วนตัว:</strong> คำนวณทั้งหมดทำในเบราว์เซอร์ ข้อมูลไม่ถูกจัดเก็บ</li>",
@@ -295,7 +295,7 @@
       "faqTitle": "คำถามที่พบบ่อยเกี่ยวกับ BMI",
       "faqContent": "<h3>BMI คืออะไร?</h3><p>BMI คือค่าที่ใช้วัดสัดส่วนระหว่างน้ำหนักและส่วนสูง เพื่อบอกระดับภาวะน้ำหนักของผู้ใหญ่</p><h3>BMI แม่นยำหรือไม่?</h3><p>BMI เป็นเพียงเครื่องมือประเมินเบื้องต้น ไม่ได้บอกสัดส่วนไขมันจริง ไม่เหมาะกับนักกีฬา หญิงตั้งครรภ์ หรือผู้สูงอายุ</p>",
       "additionalFeaturesTitle": "หมวดหมู่ของค่าดัชนี BMI",
-      "additionalFeaturesContent": "<h3>น้ำหนักต่ำกว่าเกณฑ์</h3><p>BMI ต่ำกว่า 18.5 – อาจต้องเพิ่มน้ำหนัก</p><h3>น้ำหนักปกติ</h3><p>BMI 18.5–24.9 – อยู่ในระดับที่ดี</p><h3>น้ำหนักเกิน</h3><p>BMI 25–29.9 – อาจเพิ่มความเสี่ยงสุขภาพในอนาคต</p><h3>โรคอ้วน</h3><p>BMI 30 ขึ้นไป – มีความเสี่ยงต่อโรคเรื้อรังสูงขึ้น</p>",
+      "additionalFeaturesContent": "<h3>น้ำหนักต่ำกว่าเกณฑ์</h3><p>BMI ต่ำกว่า 18.5 - อาจต้องเพิ่มน้ำหนัก</p><h3>น้ำหนักปกติ</h3><p>BMI 18.5-24.9 - อยู่ในระดับที่ดี</p><h3>น้ำหนักเกิน</h3><p>BMI 25-29.9 - อาจเพิ่มความเสี่ยงสุขภาพในอนาคต</p><h3>โรคอ้วน</h3><p>BMI 30 ขึ้นไป - มีความเสี่ยงต่อโรคเรื้อรังสูงขึ้น</p>",
       "conclusionTitle": "ติดตามสุขภาพของคุณด้วยค่า BMI",
       "conclusionContent": "<p>การตรวจสอบ BMI เป็นประจำช่วยให้คุณติดตามการเปลี่ยนแปลงของน้ำหนัก ใช้เครื่องคำนวณฟรีนี้เป็นจุดเริ่มต้น และปรึกษาแพทย์หากมีข้อกังวลเกี่ยวกับสุขภาพ</p>"
     }
@@ -329,7 +329,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "ऑनलाइन BMI कैलकुलेटर – अपना वज़न और स्वास्थ्य स्थिति जांचें",
+      "heroTitle": "ऑनलाइन BMI कैलकुलेटर - अपना वज़न और स्वास्थ्य स्थिति जांचें",
       "heroText": "हमारा <strong>फ्री BMI कैलकुलेटर</strong> आपको तुरंत आपका <strong>बॉडी मास इंडेक्स (BMI)</strong> बताता है और यह दिखाता है कि आप कम वज़न, सामान्य, अधिक वज़न या मोटापा श्रेणी में आते हैं।",
       "featuresTitle": "हमारा BMI कैलकुलेटर क्यों उपयोग करें?",
       "featuresList": "<li><strong>पूरी तरह मुफ्त:</strong> जितनी बार चाहें BMI जांचें।</li><li><strong>दो यूनिट विकल्प:</strong> मेट्रिक (kg/cm) और इम्पीरियल (lbs/ft+in)।</li><li><strong>तुरंत परिणाम:</strong> बटन दबाते ही आपका BMI दिखाई देगा।</li><li><strong>पूर्ण गोपनीयता:</strong> सभी गणनाएं आपके ब्राउज़र पर होती हैं, कोई डेटा संग्रह नहीं होता।</li>",
@@ -338,7 +338,7 @@
       "faqTitle": "BMI से जुड़े सामान्य प्रश्न",
       "faqContent": "<h3>BMI क्या है?</h3><p>BMI का अर्थ बॉडी मास इंडेक्स है, जो वज़न और लंबाई के आधार पर वज़न की श्रेणी बताता है।</p><h3>क्या BMI हमेशा सटीक होता है?</h3><p>नहीं। यह एक प्रारंभिक स्क्रीनिंग टूल है। एथलीट, गर्भवती महिलाएं या बुजुर्गों के लिए यह कम सटीक हो सकता है।</p>",
       "additionalFeaturesTitle": "BMI श्रेणियों को समझें",
-      "additionalFeaturesContent": "<h3>कम वज़न</h3><p>BMI &lt; 18.5 – वज़न बढ़ाने की ज़रूरत हो सकती है।</p><h3>सामान्य</h3><p>BMI 18.5–24.9 – स्वस्थ श्रेणी।</p><h3>अधिक वज़न</h3><p>BMI 25–29.9 – स्वास्थ्य जोखिम बढ़ सकता है।</p><h3>मोटापा</h3><p>BMI ≥ 30 – गंभीर स्वास्थ्य जोखिमों की संभावना।</p>",
+      "additionalFeaturesContent": "<h3>कम वज़न</h3><p>BMI &lt; 18.5 - वज़न बढ़ाने की ज़रूरत हो सकती है।</p><h3>सामान्य</h3><p>BMI 18.5-24.9 - स्वस्थ श्रेणी।</p><h3>अधिक वज़न</h3><p>BMI 25-29.9 - स्वास्थ्य जोखिम बढ़ सकता है।</p><h3>मोटापा</h3><p>BMI ≥ 30 - गंभीर स्वास्थ्य जोखिमों की संभावना।</p>",
       "conclusionTitle": "BMI के साथ अपनी सेहत का ध्यान रखें",
       "conclusionContent": "<p>BMI की नियमित जांच से आप अपने वज़न में बदलाव को बेहतर समझ सकते हैं। किसी भी चिंता की स्थिति में डॉक्टर से सलाह लें।</p>"
     }
@@ -372,7 +372,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "免费在线 BMI 计算器 – 快速评估你的健康状况",
+      "heroTitle": "免费在线 BMI 计算器 - 快速评估你的健康状况",
       "heroText": "使用我们的<strong>免费 BMI 计算器</strong>，快速计算你的<strong>身体质量指数（BMI）</strong>，并查看你是偏瘦、正常、超重还是肥胖。支持公制与英制，结果即时显示。",
       "featuresTitle": "为什么选择我们的 BMI 计算器？",
       "featuresList": "<li><strong>完全免费：</strong>随时无限次计算。</li><li><strong>多种单位选择：</strong>支持 kg/cm 和 lbs/ft+in。</li><li><strong>即时显示结果：</strong>点击后立即查看 BMI 数值和体重分类。</li><li><strong>高度隐私：</strong>计算过程仅在浏览器中完成，不会存储任何数据。</li>",
@@ -381,7 +381,7 @@
       "faqTitle": "常见问题解答（BMI）",
       "faqContent": "<h3>BMI 是什么？</h3><p>BMI（身体质量指数）是一项根据身高与体重计算得出的指标，用于评估体重是否处于健康范围。</p><h3>BMI 准确吗？</h3><p>BMI 仅作为初步筛查，不区分脂肪与肌肉量，因此对运动员、孕妇、老人等群体可能不够准确。</p>",
       "additionalFeaturesTitle": "BMI 分类说明",
-      "additionalFeaturesContent": "<h3>偏瘦</h3><p>BMI &lt; 18.5 – 可能需要增加体重。</p><h3>正常</h3><p>BMI 18.5–24.9 – 属于健康范围。</p><h3>超重</h3><p>BMI 25–29.9 – 可能增加未来健康风险。</p><h3>肥胖</h3><p>BMI ≥ 30 – 增加患慢性疾病的风险。</p>",
+      "additionalFeaturesContent": "<h3>偏瘦</h3><p>BMI &lt; 18.5 - 可能需要增加体重。</p><h3>正常</h3><p>BMI 18.5-24.9 - 属于健康范围。</p><h3>超重</h3><p>BMI 25-29.9 - 可能增加未来健康风险。</p><h3>肥胖</h3><p>BMI ≥ 30 - 增加患慢性疾病的风险。</p>",
       "conclusionTitle": "通过 BMI 更好地了解你的健康",
       "conclusionContent": "<p>定期检查 BMI 有助于追踪体重变化。若对结果有疑问，请咨询医生或健康专家。</p>"
     }
@@ -415,7 +415,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Calculateur IMC Gratuit – Vérifiez Votre Poids et Votre Santé",
+      "heroTitle": "Calculateur IMC Gratuit - Vérifiez Votre Poids et Votre Santé",
       "heroText": "Utilisez notre <strong>calculateur IMC gratuit</strong> pour estimer rapidement votre <strong>Indice de Masse Corporelle (IMC)</strong> et savoir si vous êtes en insuffisance pondérale, poids normal, surpoids ou obésité.",
       "featuresTitle": "Pourquoi utiliser notre calculateur IMC ?",
       "featuresList": "<li><strong>100% gratuit :</strong> Réalisez autant de calculs que vous le souhaitez.</li><li><strong>Métrique et impérial :</strong> Compatible kg/cm et lbs/ft+in.</li><li><strong>Résultats immédiats :</strong> Obtenez votre IMC et votre catégorie instantanément.</li><li><strong>Respect de la vie privée :</strong> Toutes les opérations se font sur votre navigateur, sans stockage de données.</li>",
@@ -424,7 +424,7 @@
       "faqTitle": "Questions fréquentes sur l’IMC",
       "faqContent": "<h3>Qu’est-ce que l’IMC ?</h3><p>L’IMC (Indice de Masse Corporelle) est une mesure basée sur le poids et la taille qui permet d’estimer la corpulence d’un adulte.</p><h3>L’IMC est-il fiable ?</h3><p>Il s’agit d’un indicateur simple, pas d’un diagnostic. L’IMC ne différencie pas la masse grasse de la masse musculaire et peut être moins précis pour les sportifs, les seniors ou les femmes enceintes.</p>",
       "additionalFeaturesTitle": "Comprendre les catégories IMC",
-      "additionalFeaturesContent": "<h3>Insuffisance pondérale</h3><p>IMC &lt; 18,5 – Peut indiquer un poids trop faible.</p><h3>Poids normal</h3><p>IMC 18,5–24,9 – Poids considéré comme sain.</p><h3>Surpoids</h3><p>IMC 25–29,9 – Peut augmenter le risque de problèmes de santé.</p><h3>Obésité</h3><p>IMC ≥ 30 – Associé à un risque plus élevé de maladies chroniques.</p>",
+      "additionalFeaturesContent": "<h3>Insuffisance pondérale</h3><p>IMC &lt; 18,5 - Peut indiquer un poids trop faible.</p><h3>Poids normal</h3><p>IMC 18,5-24,9 - Poids considéré comme sain.</p><h3>Surpoids</h3><p>IMC 25-29,9 - Peut augmenter le risque de problèmes de santé.</p><h3>Obésité</h3><p>IMC ≥ 30 - Associé à un risque plus élevé de maladies chroniques.</p>",
       "conclusionTitle": "Suivez Votre État de Santé avec l’IMC",
       "conclusionContent": "<p>Contrôler régulièrement votre IMC vous aide à suivre l’évolution de votre poids. Pour toute inquiétude, demandez conseil à un professionnel de santé.</p>"
     }
@@ -433,7 +433,7 @@
     "title": "Kostenloser Online BMI-Rechner | Body-Mass-Index Berechnen",
     "metaDescription": "Kostenloser BMI-Rechner. Berechnen Sie Ihren Body-Mass-Index (BMI) schnell mit metrischen oder imperialen Einheiten und erfahren Sie Ihre Gewichtskategorie.",
     "headerTitle": "Kostenloser Online BMI-Rechner",
-    "headerSubtitle": "Berechnen Sie Ihren BMI in wenigen Sekunden – keine Registrierung erforderlich.",
+    "headerSubtitle": "Berechnen Sie Ihren BMI in wenigen Sekunden - keine Registrierung erforderlich.",
     "countButton": "BMI berechnen",
     "footerText": "Haben Sie Fragen oder Feedback? Schreiben Sie uns an support@calculate-bmi.online",
     "alertMessages": {
@@ -458,16 +458,16 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Kostenloser BMI-Rechner – Schnell Ihre Gesundheit Einschätzen",
+      "heroTitle": "Kostenloser BMI-Rechner - Schnell Ihre Gesundheit Einschätzen",
       "heroText": "Mit unserem <strong>kostenlosen BMI-Rechner</strong> können Sie Ihren <strong>Body-Mass-Index (BMI)</strong> sofort berechnen und herausfinden, ob Sie sich im Untergewicht, Normalgewicht, Übergewicht oder in der Adipositas befinden.",
       "featuresTitle": "Warum diesen BMI-Rechner nutzen?",
-      "featuresList": "<li><strong>Komplett kostenlos:</strong> Berechnen Sie Ihren BMI beliebig oft.</li><li><strong>Metrisch & imperial:</strong> Eingabe in kg/cm oder lbs/ft+in.</li><li><strong>Sofortige Ergebnisse:</strong> Ihr BMI-Wert erscheint direkt nach dem Klick.</li><li><strong>Datenschutzfreundlich:</strong> Alle Berechnungen erfolgen lokal in Ihrem Browser – keine Datenspeicherung.</li>",
+      "featuresList": "<li><strong>Komplett kostenlos:</strong> Berechnen Sie Ihren BMI beliebig oft.</li><li><strong>Metrisch & imperial:</strong> Eingabe in kg/cm oder lbs/ft+in.</li><li><strong>Sofortige Ergebnisse:</strong> Ihr BMI-Wert erscheint direkt nach dem Klick.</li><li><strong>Datenschutzfreundlich:</strong> Alle Berechnungen erfolgen lokal in Ihrem Browser - keine Datenspeicherung.</li>",
       "howItWorksTitle": "Wie funktioniert der BMI-Rechner?",
       "howItWorksList": "<li><strong>1. Einheiten wählen:</strong> Metrisch oder imperial.</li><li><strong>2. Gewicht eingeben:</strong> Aktuelles Gewicht eintragen.</li><li><strong>3. Körpergröße eingeben:</strong> In cm oder ft/in.</li><li><strong>4. BMI berechnen:</strong> Ihr Ergebnis erscheint sofort.</li>",
       "faqTitle": "Häufige Fragen zum BMI",
       "faqContent": "<h3>Was ist der BMI?</h3><p>Der BMI (Body-Mass-Index) ist ein Verhältnis zwischen Körpergewicht und Körpergröße, das zur Einordnung des Körpergewichts genutzt wird.</p><h3>Ist der BMI genau?</h3><p>Der BMI ist ein einfacher Richtwert und kein medizinischer Test. Er berücksichtigt nicht die Muskelmasse und ist für Sportler, ältere Menschen oder Schwangere weniger geeignet.</p>",
       "additionalFeaturesTitle": "BMI-Kategorien verstehen",
-      "additionalFeaturesContent": "<h3>Untergewicht</h3><p>BMI &lt; 18,5 – möglicherweise zu niedriges Körpergewicht.</p><h3>Normalgewicht</h3><p>BMI 18,5–24,9 – als gesund eingestuft.</p><h3>Übergewicht</h3><p>BMI 25–29,9 – kann langfristig Gesundheitsrisiken erhöhen.</p><h3>Adipositas</h3><p>BMI ≥ 30 – erhöhtes Risiko für chronische Krankheiten.</p>",
+      "additionalFeaturesContent": "<h3>Untergewicht</h3><p>BMI &lt; 18,5 - möglicherweise zu niedriges Körpergewicht.</p><h3>Normalgewicht</h3><p>BMI 18,5-24,9 - als gesund eingestuft.</p><h3>Übergewicht</h3><p>BMI 25-29,9 - kann langfristig Gesundheitsrisiken erhöhen.</p><h3>Adipositas</h3><p>BMI ≥ 30 - erhöhtes Risiko für chronische Krankheiten.</p>",
       "conclusionTitle": "Behalten Sie Ihre Gesundheit mit dem BMI im Blick",
       "conclusionContent": "<p>Regelmäßige BMI-Berechnungen helfen Ihnen, Veränderungen Ihres Körpergewichts frühzeitig zu erkennen. Bei gesundheitlichen Fragen wenden Sie sich an medizinisches Fachpersonal.</p>"
     }
@@ -476,7 +476,7 @@
     "title": "Gratis BMI-kalkulator på Nett | Beregn Kroppsmasseindeks",
     "metaDescription": "Gratis BMI-kalkulator. Beregn din kroppsmasseindeks (BMI) raskt med metriske eller imperiale enheter og se hvilken vektkategori du tilhører.",
     "headerTitle": "Gratis BMI-kalkulator på Nett",
-    "headerSubtitle": "Beregn BMI på få sekunder – ingen registrering nødvendig.",
+    "headerSubtitle": "Beregn BMI på få sekunder - ingen registrering nødvendig.",
     "countButton": "Beregn BMI",
     "footerText": "Har du spørsmål eller tilbakemeldinger? Kontakt oss på support@calculate-bmi.online",
     "alertMessages": {
@@ -501,16 +501,16 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Gratis BMI-kalkulator – Sjekk Vekt og Helse",
+      "heroTitle": "Gratis BMI-kalkulator - Sjekk Vekt og Helse",
       "heroText": "Bruk vår <strong>gratis BMI-kalkulator</strong> for raskt å beregne din <strong>kroppsmasseindeks (BMI)</strong> og se om du er undervektig, normalvektig, overvektig eller har fedme.",
       "featuresTitle": "Fordeler med vår BMI-kalkulator",
-      "featuresList": "<li><strong>Helt gratis:</strong> Beregn BMI så mange ganger du vil.</li><li><strong>Metriske og imperiale enheter:</strong> Velg kg/cm eller lbs/ft+in.</li><li><strong>Resultat med én gang:</strong> BMI-verdien vises umiddelbart.</li><li><strong>Personvernvennlig:</strong> Alt beregnes i nettleseren – ingen data lagres.</li>",
+      "featuresList": "<li><strong>Helt gratis:</strong> Beregn BMI så mange ganger du vil.</li><li><strong>Metriske og imperiale enheter:</strong> Velg kg/cm eller lbs/ft+in.</li><li><strong>Resultat med én gang:</strong> BMI-verdien vises umiddelbart.</li><li><strong>Personvernvennlig:</strong> Alt beregnes i nettleseren - ingen data lagres.</li>",
       "howItWorksTitle": "Slik bruker du BMI-kalkulatoren",
       "howItWorksList": "<li><strong>1. Velg enheter:</strong> Metrisk eller imperial.</li><li><strong>2. Skriv inn vekt:</strong> Nåværende vekt.</li><li><strong>3. Skriv inn høyde:</strong> I cm eller ft/in.</li><li><strong>4. Beregn BMI:</strong> Se resultat og kategori.</li>",
       "faqTitle": "Ofte stilte spørsmål om BMI",
       "faqContent": "<h3>Hva er BMI?</h3><p>BMI står for kroppsmasseindeks og brukes som et enkelt mål for å vurdere vekt i forhold til høyde.</p><h3>Er BMI nøyaktig?</h3><p>BMI er en generell indikator og ikke en medisinsk diagnose. Det skiller ikke mellom fettmasse og muskelmasse og passer dårlig for idrettsutøvere, eldre og gravide.</p>",
       "additionalFeaturesTitle": "Forstå BMI-kategoriene",
-      "additionalFeaturesContent": "<h3>Undervekt</h3><p>BMI &lt; 18.5 – kan tyde på for lav vekt.</p><h3>Normalvekt</h3><p>BMI 18.5–24.9 – regnes som sunt vektnivå.</p><h3>Overvekt</h3><p>BMI 25–29.9 – økt risiko for helseproblemer over tid.</p><h3>Fedme</h3><p>BMI ≥ 30 – høy risiko for livsstilssykdommer.</p>",
+      "additionalFeaturesContent": "<h3>Undervekt</h3><p>BMI &lt; 18.5 - kan tyde på for lav vekt.</p><h3>Normalvekt</h3><p>BMI 18.5-24.9 - regnes som sunt vektnivå.</p><h3>Overvekt</h3><p>BMI 25-29.9 - økt risiko for helseproblemer over tid.</p><h3>Fedme</h3><p>BMI ≥ 30 - høy risiko for livsstilssykdommer.</p>",
       "conclusionTitle": "Følg Helsen din med BMI",
       "conclusionContent": "<p>Ved å beregne BMI regelmessig kan du oppdage endringer i vekt tidlig. Kontakt helsepersonell om du har spørsmål om resultatene dine.</p>"
     }
@@ -519,7 +519,7 @@
     "title": "Gratis BMI-Beregner Online | Udregn Dit Body Mass Index",
     "metaDescription": "Gratis BMI-beregner. Beregn dit Body Mass Index hurtigt med metriske eller imperiale enheder og se din vægtkategori.",
     "headerTitle": "Gratis BMI-Beregner Online",
-    "headerSubtitle": "Beregn dit BMI på få sekunder – ingen registrering påkrævet.",
+    "headerSubtitle": "Beregn dit BMI på få sekunder - ingen registrering påkrævet.",
     "countButton": "Beregn BMI",
     "footerText": "Har du problemer eller feedback? Kontakt os på support@calculate-bmi.online",
     "alertMessages": {
@@ -544,16 +544,16 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Gratis BMI-Beregner – Tjek Din Vægt og Sundhed",
+      "heroTitle": "Gratis BMI-Beregner - Tjek Din Vægt og Sundhed",
       "heroText": "Med vores <strong>gratis BMI-beregner</strong> kan du hurtigt udregne dit <strong>Body Mass Index (BMI)</strong> og se, om du er undervægtig, normalvægtig, overvægtig eller i kategorien fedme.",
       "featuresTitle": "Fordele ved vores BMI-beregner",
-      "featuresList": "<li><strong>Helt gratis:</strong> Brug beregneren uden begrænsninger.</li><li><strong>Flere enheder:</strong> Understøtter både kg/cm og lbs/ft+in.</li><li><strong>Øjeblikkelige resultater:</strong> Dit BMI vises med det samme.</li><li><strong>Privat og sikkert:</strong> Alle beregninger udføres i din browser – ingen data gemmes.</li>",
+      "featuresList": "<li><strong>Helt gratis:</strong> Brug beregneren uden begrænsninger.</li><li><strong>Flere enheder:</strong> Understøtter både kg/cm og lbs/ft+in.</li><li><strong>Øjeblikkelige resultater:</strong> Dit BMI vises med det samme.</li><li><strong>Privat og sikkert:</strong> Alle beregninger udføres i din browser - ingen data gemmes.</li>",
       "howItWorksTitle": "Sådan bruger du BMI-beregneren",
       "howItWorksList": "<li><strong>1. Vælg enheder:</strong> Metrisk eller imperial.</li><li><strong>2. Indtast vægt:</strong> Din aktuelle vægt.</li><li><strong>3. Indtast højde:</strong> I cm eller ft/in.</li><li><strong>4. Beregn BMI:</strong> Se dit resultat og din kategori.</li>",
       "faqTitle": "Ofte stillede spørgsmål om BMI",
       "faqContent": "<h3>Hvad er BMI?</h3><p>BMI er et forhold mellem højde og vægt, der bruges som en indikator for sund vægt.</p><h3>Er BMI præcist?</h3><p>BMI er en grov indikator og tager ikke højde for muskelmasse, alder eller kropsbygning. Det kan være misvisende for atleter, ældre eller gravide.</p>",
       "additionalFeaturesTitle": "Forstå BMI-kategorierne",
-      "additionalFeaturesContent": "<h3>Undervægt</h3><p>BMI &lt; 18.5 – kan indikere for lav vægt.</p><h3>Normalvægt</h3><p>BMI 18.5–24.9 – betragtes som sundt.</p><h3>Overvægt</h3><p>BMI 25–29.9 – øget risiko for helbredsproblemer.</p><h3>Fedme</h3><p>BMI ≥ 30 – markant forhøjet helbredsrisiko.</p>",
+      "additionalFeaturesContent": "<h3>Undervægt</h3><p>BMI &lt; 18.5 - kan indikere for lav vægt.</p><h3>Normalvægt</h3><p>BMI 18.5-24.9 - betragtes som sundt.</p><h3>Overvægt</h3><p>BMI 25-29.9 - øget risiko for helbredsproblemer.</p><h3>Fedme</h3><p>BMI ≥ 30 - markant forhøjet helbredsrisiko.</p>",
       "conclusionTitle": "Hold Øje med Din Sundhed via BMI",
       "conclusionContent": "<p>Ved at tjekke dit BMI jævnligt kan du følge ændringer i din vægt. Kontakt en sundhedsprofessionel, hvis du har bekymringer om dine resultater.</p>"
     }
@@ -587,7 +587,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Calculadora de IMC Online – Verifique Seu Peso e Saúde",
+      "heroTitle": "Calculadora de IMC Online - Verifique Seu Peso e Saúde",
       "heroText": "Use nossa <strong>calculadora de IMC gratuita</strong> para estimar seu <strong>Índice de Massa Corporal (IMC)</strong> rapidamente e descobrir se está abaixo do peso, com peso normal, sobrepeso ou obesidade.",
       "featuresTitle": "Por que usar esta calculadora de IMC?",
       "featuresList": "<li><strong>Totalmente gratuita:</strong> Use quantas vezes quiser.</li><li><strong>Unidades métricas e imperiais:</strong> Escolha kg/cm ou lbs/ft+in.</li><li><strong>Resultado imediato:</strong> Veja seu IMC instantaneamente.</li><li><strong>Privacidade garantida:</strong> Todas as operações são feitas no navegador, sem armazenamento de dados.</li>",
@@ -596,7 +596,7 @@
       "faqTitle": "Perguntas frequentes sobre IMC",
       "faqContent": "<h3>O que é IMC?</h3><p>O Índice de Massa Corporal é uma medida usada para avaliar se o peso está adequado para a altura.</p><h3>O IMC é preciso?</h3><p>É uma ferramenta simples e não substitui avaliação médica. Pode não ser ideal para atletas, gestantes ou idosos.</p>",
       "additionalFeaturesTitle": "Categorias de IMC explicadas",
-      "additionalFeaturesContent": "<h3>Abaixo do peso</h3><p>IMC &lt; 18,5 – Pode indicar baixo peso.</p><h3>Peso normal</h3><p>IMC 18,5–24,9 – Considerado saudável.</p><h3>Sobrepeso</h3><p>IMC 25–29,9 – Pode aumentar o risco de doenças.</p><h3>Obesidade</h3><p>IMC ≥ 30 – Risco elevado de doenças crônicas.</p>",
+      "additionalFeaturesContent": "<h3>Abaixo do peso</h3><p>IMC &lt; 18,5 - Pode indicar baixo peso.</p><h3>Peso normal</h3><p>IMC 18,5-24,9 - Considerado saudável.</p><h3>Sobrepeso</h3><p>IMC 25-29,9 - Pode aumentar o risco de doenças.</p><h3>Obesidade</h3><p>IMC ≥ 30 - Risco elevado de doenças crônicas.</p>",
       "conclusionTitle": "Acompanhe sua saúde através do IMC",
       "conclusionContent": "<p>Monitorar seu IMC ao longo do tempo ajuda a entender mudanças de peso. Consulte um profissional de saúde se tiver dúvidas.</p>"
     }
@@ -630,7 +630,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Kalkulator BMI Online – Cek Kondisi Berat & Kesehatan Anda",
+      "heroTitle": "Kalkulator BMI Online - Cek Kondisi Berat & Kesehatan Anda",
       "heroText": "Gunakan <strong>kalkulator BMI gratis</strong> kami untuk menghitung <strong>Indeks Massa Tubuh (BMI)</strong> secara cepat dan ketahui apakah Anda termasuk kurus, normal, kelebihan berat badan, atau obesitas.",
       "featuresTitle": "Mengapa menggunakan kalkulator BMI ini?",
       "featuresList": "<li><strong>Gratis sepenuhnya:</strong> Gunakan tanpa batas.</li><li><strong>Dua jenis satuan:</strong> Metrik (kg/cm) atau imperial (lbs/ft+in).</li><li><strong>Hasil instan:</strong> BMI langsung muncul.</li><li><strong>Privasi terjamin:</strong> Semua perhitungan dilakukan di browser Anda.</li>",
@@ -639,7 +639,7 @@
       "faqTitle": "Pertanyaan umum tentang BMI",
       "faqContent": "<h3>Apa itu BMI?</h3><p>BMI adalah ukuran sederhana untuk menilai apakah berat badan Anda sesuai dengan tinggi badan.</p><h3>Apakah BMI akurat?</h3><p>Ini hanyalah alat skrining awal. BMI tidak memperhitungkan massa otot sehingga bisa kurang akurat bagi atlet, lansia, atau ibu hamil.</p>",
       "additionalFeaturesTitle": "Penjelasan kategori BMI",
-      "additionalFeaturesContent": "<h3>Kurus</h3><p>BMI &lt; 18,5 – Mungkin perlu menambah berat badan.</p><h3>Normal</h3><p>BMI 18,5–24,9 – Berat badan sehat.</p><h3>Kelebihan berat badan</h3><p>BMI 25–29,9 – Berisiko meningkatkan masalah kesehatan.</p><h3>Obesitas</h3><p>BMI ≥ 30 – Risiko penyakit kronis meningkat.</p>",
+      "additionalFeaturesContent": "<h3>Kurus</h3><p>BMI &lt; 18,5 - Mungkin perlu menambah berat badan.</p><h3>Normal</h3><p>BMI 18,5-24,9 - Berat badan sehat.</p><h3>Kelebihan berat badan</h3><p>BMI 25-29,9 - Berisiko meningkatkan masalah kesehatan.</p><h3>Obesitas</h3><p>BMI ≥ 30 - Risiko penyakit kronis meningkat.</p>",
       "conclusionTitle": "Pantau kesehatan Anda dengan BMI",
       "conclusionContent": "<p>Mengecek BMI secara rutin membantu memahami perubahan berat badan. Jika ragu dengan hasilnya, konsultasikan dengan tenaga medis.</p>"
     }
@@ -673,7 +673,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Online BMI Hesaplayıcı – Kilonuzu ve Sağlığınızı Kontrol Edin",
+      "heroTitle": "Online BMI Hesaplayıcı - Kilonuzu ve Sağlığınızı Kontrol Edin",
       "heroText": "Bu <strong>ücretsiz BMI hesaplayıcı</strong> ile <strong>Vücut Kitle İndeksinizi</strong> hızlıca hesaplayabilir ve zayıf, normal, fazla kilolu veya obez kategorilerinden hangisine ait olduğunuzu öğrenebilirsiniz.",
       "featuresTitle": "Bu BMI hesaplayıcıyı neden kullanmalısınız?",
       "featuresList": "<li><strong>Tamamen ücretsiz:</strong> Sınırsız kullanım.</li><li><strong>Metrik ve imperial:</strong> kg/cm veya lbs/ft+in desteği.</li><li><strong>Anında sonuç:</strong> BMI değeriniz hemen görüntülenir.</li><li><strong>Gizlilik odaklı:</strong> Tüm hesaplamalar tarayıcınızda gerçekleşir.</li>",
@@ -682,7 +682,7 @@
       "faqTitle": "BMI ile ilgili sık sorulan sorular",
       "faqContent": "<h3>BMI nedir?</h3><p>Vücut Kitle İndeksi, boy-kilo oranına göre kilo durumunu değerlendiren bir ölçüdür.</p><h3>BMI ne kadar doğru?</h3><p>BMI yalnızca tarama amaçlıdır ve kesin bir sağlık değerlendirmesi değildir. Kas kütlesi veya vücut yapısını dikkate almadığı için sporcular, hamileler ve yaşlılar için daha az uygun olabilir.</p>",
       "additionalFeaturesTitle": "BMI kategorileri açıklaması",
-      "additionalFeaturesContent": "<h3>Zayıf</h3><p>BMI &lt; 18,5 – Kilo almanız gerekebilir.</p><h3>Normal</h3><p>BMI 18,5–24,9 – Sağlıklı kabul edilen aralık.</p><h3>Fazla kilolu</h3><p>BMI 25–29,9 – Sağlık riskini artırabilir.</p><h3>Obezite</h3><p>BMI ≥ 30 – Ciddi sağlık sorunları riski artar.</p>",
+      "additionalFeaturesContent": "<h3>Zayıf</h3><p>BMI &lt; 18,5 - Kilo almanız gerekebilir.</p><h3>Normal</h3><p>BMI 18,5-24,9 - Sağlıklı kabul edilen aralık.</p><h3>Fazla kilolu</h3><p>BMI 25-29,9 - Sağlık riskini artırabilir.</p><h3>Obezite</h3><p>BMI ≥ 30 - Ciddi sağlık sorunları riski artar.</p>",
       "conclusionTitle": "BMI ile sağlığınızı takip edin",
       "conclusionContent": "<p>Rutin BMI kontrolü, kilo değişikliklerini takip etmenize yardımcı olur. Endişeleriniz varsa bir doktora danışın.</p>"
     }
@@ -725,7 +725,7 @@
       "faqTitle": "Поширені запитання про ІМТ",
       "faqContent": "<h3>Що таке ІМТ?</h3><p>Індекс маси тіла — це показник співвідношення ваги та зросту, що використовується для оцінки стану ваги.</p><h3>Чи є ІМТ точним?</h3><p>ІМТ — це індикатор, а не медичний діагноз. Він не враховує м’язову масу та може бути неточним для спортсменів, вагітних та людей похилого віку.</p>",
       "additionalFeaturesTitle": "Категорії ІМТ",
-      "additionalFeaturesContent": "<h3>Недостатня вага</h3><p>ІМТ &lt; 18.5 — можливий дефіцит маси тіла.</p><h3>Норма</h3><p>ІМТ 18.5–24.9 — здоровий діапазон.</p><h3>Надмірна вага</h3><p>ІМТ 25–29.9 — ризик проблем зі здоров’ям підвищується.</p><h3>Ожиріння</h3><p>ІМТ ≥ 30 — значно підвищений ризик хронічних хвороб.</p>",
+      "additionalFeaturesContent": "<h3>Недостатня вага</h3><p>ІМТ &lt; 18.5 — можливий дефіцит маси тіла.</p><h3>Норма</h3><p>ІМТ 18.5-24.9 — здоровий діапазон.</p><h3>Надмірна вага</h3><p>ІМТ 25-29.9 — ризик проблем зі здоров’ям підвищується.</p><h3>Ожиріння</h3><p>ІМТ ≥ 30 — значно підвищений ризик хронічних хвороб.</p>",
       "conclusionTitle": "Слідкуйте за станом здоров’я з ІМТ",
       "conclusionContent": "<p>Регулярний контроль ІМТ допомагає стежити за змінами ваги. У разі занепокоєння проконсультуйтеся з лікарем.</p>"
     }
@@ -768,7 +768,7 @@
       "faqTitle": "Часто задаваемые вопросы об ИМТ",
       "faqContent": "<h3>Что такое ИМТ?</h3><p>Индекс массы тела — это показатель, который сравнивает ваш вес и рост, чтобы определить категорию веса.</p><h3>Насколько точен ИМТ?</h3><p>ИМТ — это ориентировочный показатель, не учитывающий мышцы, возраст и телосложение. Он может быть неточным для спортсменов, беременных и пожилых людей.</p>",
       "additionalFeaturesTitle": "Категории ИМТ",
-      "additionalFeaturesContent": "<h3>Недостаточный вес</h3><p>ИМТ &lt; 18,5 — возможен дефицит массы тела.</p><h3>Норма</h3><p>ИМТ 18,5–24,9 — нормальный диапазон.</p><h3>Избыточный вес</h3><p>ИМТ 25–29,9 — повышенный риск заболеваний.</p><h3>Ожирение</h3><p>ИМТ ≥ 30 — значительный риск хронических заболеваний.</p>",
+      "additionalFeaturesContent": "<h3>Недостаточный вес</h3><p>ИМТ &lt; 18,5 — возможен дефицит массы тела.</p><h3>Норма</h3><p>ИМТ 18,5-24,9 — нормальный диапазон.</p><h3>Избыточный вес</h3><p>ИМТ 25-29,9 — повышенный риск заболеваний.</p><h3>Ожирение</h3><p>ИМТ ≥ 30 — значительный риск хронических заболеваний.</p>",
       "conclusionTitle": "Следите за своим здоровьем с помощью ИМТ",
       "conclusionContent": "<p>Регулярный контроль ИМТ помогает отслеживать изменения веса. При сомнениях проконсультируйтесь с врачом.</p>"
     }
@@ -802,7 +802,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "Ókeypis BMI Reiknivél – Athugaðu Þyngd og Heilsu",
+      "heroTitle": "Ókeypis BMI Reiknivél - Athugaðu Þyngd og Heilsu",
       "heroText": "Með <strong>ókeypis BMI reiknivélinni</strong> okkar getur þú fljótt reiknað <strong>líkamsþyngdarstuðulinn (BMI)</strong> og séð hvort þú sért í undirþyngd, eðlilegri þyngd, yfirþyngd eða offitu.",
       "featuresTitle": "Kostir BMI reiknivélarinnar",
       "featuresList": "<li><strong>Algerlega ókeypis:</strong> Ótakmörkuð notkun.</li><li><strong>Metrískar og enskar einingar:</strong> kg/cm eða lbs/ft+in.</li><li><strong>Strax niðurstöður:</strong> BMI birtist samstundis.</li><li><strong>Persónuvernd:</strong> Allar útreikningar fara fram í vafranum þínum.</li>",
@@ -811,7 +811,7 @@
       "faqTitle": "Algengar spurningar um BMI",
       "faqContent": "<h3>Hvað er BMI?</h3><p>Líkamsþyngdarstuðull (BMI) er mælikvarði sem ber saman hæð og þyngd til að meta líkamsþyngd.</p><h3>Er BMI nákvæmt?</h3><p>Það er einfalt viðmið, ekki læknisfræðileg greining. Það tekur ekki mið af vöðvamassa og getur verið ónákvæmt fyrir íþróttafólk, þungaðar konur og aldraða.</p>",
       "additionalFeaturesTitle": "Skýring á BMI flokkum",
-      "additionalFeaturesContent": "<h3>Undirþyngd</h3><p>BMI &lt; 18.5 – mögulega of lítil þyngd.</p><h3>Eðlileg þyngd</h3><p>BMI 18.5–24.9 – heilbrigður þyngdarflokkur.</p><h3>Yfirþyngd</h3><p>BMI 25–29.9 – aukin hætta á heilsuvanda.</p><h3>Offita</h3><p>BMI ≥ 30 – verulega aukin hætta á langvarandi sjúkdómum.</p>",
+      "additionalFeaturesContent": "<h3>Undirþyngd</h3><p>BMI &lt; 18.5 - mögulega of lítil þyngd.</p><h3>Eðlileg þyngd</h3><p>BMI 18.5-24.9 - heilbrigður þyngdarflokkur.</p><h3>Yfirþyngd</h3><p>BMI 25-29.9 - aukin hætta á heilsuvanda.</p><h3>Offita</h3><p>BMI ≥ 30 - verulega aukin hætta á langvarandi sjúkdómum.</p>",
       "conclusionTitle": "Fylgstu með heilsunni með BMI",
       "conclusionContent": "<p>Regluleg BMI mæling hjálpar til við að fylgjast með líkamsþyngd. Hafðu samband við heilbrigðisstarfsfólk ef þú hefur áhyggjur af niðurstöðunum.</p>"
     }
@@ -845,7 +845,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "무료 BMI 계산기 – 체중과 건강 상태 확인",
+      "heroTitle": "무료 BMI 계산기 - 체중과 건강 상태 확인",
       "heroText": "우리의 <strong>무료 BMI 계산기</strong>로 <strong>체질량지수(BMI)</strong>를 빠르게 계산하고 저체중·정상·과체중·비만 중 어떤 범주에 속하는지 확인하세요.",
       "featuresTitle": "왜 이 BMI 계산기를 사용해야 하나요?",
       "featuresList": "<li><strong>완전 무료:</strong> 제한 없이 사용 가능.</li><li><strong>미터법 & 영국식 지원:</strong> kg/cm 또는 lbs/ft+in 입력 가능.</li><li><strong>즉시 결과:</strong> BMI가 바로 표시됩니다.</li><li><strong>개인정보 보호:</strong> 모든 계산은 브라우저에서 처리되어 데이터가 저장되지 않습니다.</li>",
@@ -854,7 +854,7 @@
       "faqTitle": "BMI 자주 묻는 질문",
       "faqContent": "<h3>BMI란 무엇인가요?</h3><p>BMI는 체중과 키의 비율을 기반으로 한 체중 상태 지표입니다.</p><h3>BMI가 정확한가요?</h3><p>BMI는 간단한 지표일 뿐이며, 근육량을 고려하지 않아 운동선수·임산부·노인에게는 정확하지 않을 수 있습니다.</p>",
       "additionalFeaturesTitle": "BMI 분류 기준",
-      "additionalFeaturesContent": "<h3>저체중</h3><p>BMI &lt; 18.5 – 체중 증가가 필요할 수 있습니다.</p><h3>정상</h3><p>BMI 18.5–24.9 – 건강한 범위.</p><h3>과체중</h3><p>BMI 25–29.9 – 건강 위험 증가.</p><h3>비만</h3><p>BMI ≥ 30 – 만성 질환 위험이 크게 증가.</p>",
+      "additionalFeaturesContent": "<h3>저체중</h3><p>BMI &lt; 18.5 - 체중 증가가 필요할 수 있습니다.</p><h3>정상</h3><p>BMI 18.5-24.9 - 건강한 범위.</p><h3>과체중</h3><p>BMI 25-29.9 - 건강 위험 증가.</p><h3>비만</h3><p>BMI ≥ 30 - 만성 질환 위험이 크게 증가.</p>",
       "conclusionTitle": "BMI로 건강을 관리하세요",
       "conclusionContent": "<p>정기적으로 BMI를 확인하면 체중 변화를 쉽게 추적할 수 있습니다. 결과에 대해 걱정된다면 전문 의료진과 상담하세요.</p>"
     }
@@ -888,7 +888,7 @@
       "heightPlaceholderIn": "in"
     },
     "seo": {
-      "heroTitle": "無料BMI計算ツール – 健康状態を手軽にチェック",
+      "heroTitle": "無料BMI計算ツール - 健康状態を手軽にチェック",
       "heroText": "この <strong>無料BMI計算ツール</strong>を使えば、すぐに <strong>体格指数（BMI）</strong> を計算し、低体重・普通体重・肥満のどの範囲に該当するか確認できます。",
       "featuresTitle": "このBMI計算ツールの特徴",
       "featuresList": "<li><strong>完全無料：</strong> 回数無制限で利用可能。</li><li><strong>メートル法・ヤードポンド法対応：</strong> kg/cm または lbs/ft+in。</li><li><strong>結果は即時表示：</strong> ボタンを押すだけで数値が表示されます。</li><li><strong>プライバシー保護：</strong> 計算はすべてブラウザ内で行われ、データは保存されません。</li>",
@@ -897,7 +897,7 @@
       "faqTitle": "BMIに関するよくある質問",
       "faqContent": "<h3>BMIとは？</h3><p>BMI（体格指数）は、身長と体重の関係から肥満度を評価する指標です。</p><h3>BMIは正確ですか？</h3><p>BMIは簡易的な指標であり、筋肉量や体組成を考慮しないため、スポーツ選手や高齢者、妊婦には必ずしも適していません。</p>",
       "additionalFeaturesTitle": "BMI分類の目安",
-      "additionalFeaturesContent": "<h3>低体重</h3><p>BMI &lt; 18.5 – 栄養不足の可能性あり。</p><h3>普通体重</h3><p>BMI 18.5–24.9 – 健康的な範囲。</p><h3>肥満（1度）</h3><p>BMI 25–29.9 – 健康リスクが増加。</p><h3>高度肥満</h3><p>BMI ≥ 30 – 慢性疾患リスクが大幅に増加。</p>",
+      "additionalFeaturesContent": "<h3>低体重</h3><p>BMI &lt; 18.5 - 栄養不足の可能性あり。</p><h3>普通体重</h3><p>BMI 18.5-24.9 - 健康的な範囲。</p><h3>肥満（1度）</h3><p>BMI 25-29.9 - 健康リスクが増加。</p><h3>高度肥満</h3><p>BMI ≥ 30 - 慢性疾患リスクが大幅に増加。</p>",
       "conclusionTitle": "BMIで健康管理をしましょう",
       "conclusionContent": "<p>BMIを定期的に確認することで、体重変化を把握しやすくなります。気になる場合は医療専門家に相談しましょう。</p>"
     }
