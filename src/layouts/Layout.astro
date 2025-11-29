@@ -10,10 +10,11 @@ interface Props {
 const { title, description, lang } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, siteConfig.url);
+const isRTL = lang === 'ar';
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} dir={isRTL ? 'rtl' : 'ltr'}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -158,7 +159,7 @@ const canonicalURL = new URL(Astro.url.pathname, siteConfig.url);
       background-color: #1a1a1a;
       margin-bottom: 20px;
       border-radius: 4px;
-      text-align: left;
+      text-align: start;
       border: 2px solid #f0a500;
     }
     .seo-intro h2, .seo-features h2, .seo-usecases h2, .seo-benefits h2, .seo-additional h2, .seo-conclusion h2 {
